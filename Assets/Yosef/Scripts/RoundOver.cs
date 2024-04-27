@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class RoundOver : MonoBehaviour
@@ -100,6 +101,9 @@ public class RoundOver : MonoBehaviour
 
     private void GameOver()
     {
-        //a
+        if (score[0] > score[1])
+            SceneManager.LoadScene("GameOverWin");
+        else //if (score[0] < score[1])
+            SceneManager.LoadScene("GameOverLose");
     }
 }

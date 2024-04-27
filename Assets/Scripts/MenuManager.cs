@@ -55,7 +55,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] public GameObject menuPausa;
     private bool pausa = false;
 
-    public void Pause()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -99,8 +99,20 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    public void ReturnMenu(string menuName)
+    public void ReturnMenu(int NumeroEscena)
     {
-        SceneManager.LoadScene(menuName);
+        StartCoroutine(CargarAsync(NumeroEscena));
+
+        menuPausa.SetActive(false);
+        pausa = false;
+
+        Time.timeScale = 1f;
+
+        AudioSource[] sounds = FindObjectsOfType<AudioSource>();
+
+        for (int i = 0; i < sounds.Length; i++)
+        {
+            sounds[i].Play();
+        }
     }
 }

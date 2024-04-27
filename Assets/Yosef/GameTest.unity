@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -301697273035019575, guid: c58a87ca402429d43b885607eab90e31, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: c58a87ca402429d43b885607eab90e31, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -169,6 +173,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: c58a87ca402429d43b885607eab90e31, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: c58a87ca402429d43b885607eab90e31, type: 3}
+      propertyPath: activo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: c58a87ca402429d43b885607eab90e31, type: 3}
+      propertyPath: enMano
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: c58a87ca402429d43b885607eab90e31, type: 3}
@@ -1603,6 +1615,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -301697273035019575, guid: 71931218055cc234a9d5270c754e5bf9, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: 71931218055cc234a9d5270c754e5bf9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.397
@@ -1641,6 +1657,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: 71931218055cc234a9d5270c754e5bf9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: 71931218055cc234a9d5270c754e5bf9, type: 3}
+      propertyPath: activo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: 71931218055cc234a9d5270c754e5bf9, type: 3}
+      propertyPath: enMano
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: 71931218055cc234a9d5270c754e5bf9, type: 3}
@@ -1794,6 +1818,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -301697273035019575, guid: aeee3b6286fd61e4f98167335470f734, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: aeee3b6286fd61e4f98167335470f734, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.05551061
@@ -1834,6 +1862,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: aeee3b6286fd61e4f98167335470f734, type: 3}
+      propertyPath: activo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: aeee3b6286fd61e4f98167335470f734, type: 3}
+      propertyPath: enMano
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: aeee3b6286fd61e4f98167335470f734, type: 3}
       propertyPath: m_Name
       value: Tazo_MegaMetal_1
@@ -1851,6 +1887,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -301697273035019575, guid: 1518021f2bdb9614ea4c3cb9db3520ac, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: 1518021f2bdb9614ea4c3cb9db3520ac, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.102
@@ -1891,6 +1931,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: 1518021f2bdb9614ea4c3cb9db3520ac, type: 3}
+      propertyPath: activo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: 1518021f2bdb9614ea4c3cb9db3520ac, type: 3}
+      propertyPath: enMano
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: 1518021f2bdb9614ea4c3cb9db3520ac, type: 3}
       propertyPath: m_Name
       value: Tazo_Metal_3
@@ -1908,6 +1956,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -301697273035019575, guid: 4b702fcf31c5473459909f4f3eca6459, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: 4b702fcf31c5473459909f4f3eca6459, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.391
@@ -1948,6 +2000,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: 4b702fcf31c5473459909f4f3eca6459, type: 3}
+      propertyPath: activo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: 4b702fcf31c5473459909f4f3eca6459, type: 3}
+      propertyPath: enMano
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: 4b702fcf31c5473459909f4f3eca6459, type: 3}
       propertyPath: m_Name
       value: Tazo_1
@@ -1965,6 +2025,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -301697273035019575, guid: 880f1aa04446b3944ab46f5392537dbc, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: 880f1aa04446b3944ab46f5392537dbc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.41
@@ -2005,6 +2069,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: 880f1aa04446b3944ab46f5392537dbc, type: 3}
+      propertyPath: activo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: 880f1aa04446b3944ab46f5392537dbc, type: 3}
+      propertyPath: enMano
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: 880f1aa04446b3944ab46f5392537dbc, type: 3}
       propertyPath: m_Name
       value: Tazo_Mega_2
@@ -2022,6 +2094,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -301697273035019575, guid: 4866e5d1ef4986046af79e4076827e43, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: 4866e5d1ef4986046af79e4076827e43, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.401
@@ -2060,6 +2136,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: 4866e5d1ef4986046af79e4076827e43, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: 4866e5d1ef4986046af79e4076827e43, type: 3}
+      propertyPath: activo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: 4866e5d1ef4986046af79e4076827e43, type: 3}
+      propertyPath: enMano
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: 4866e5d1ef4986046af79e4076827e43, type: 3}
@@ -2177,6 +2261,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -301697273035019575, guid: bb77592809ca1f9488fb637a087af356, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: bb77592809ca1f9488fb637a087af356, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2217,6 +2305,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: bb77592809ca1f9488fb637a087af356, type: 3}
+      propertyPath: activo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: bb77592809ca1f9488fb637a087af356, type: 3}
+      propertyPath: enMano
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: bb77592809ca1f9488fb637a087af356, type: 3}
       propertyPath: m_Name
       value: Tazo_Metal_1
@@ -2234,6 +2330,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -301697273035019575, guid: a488ab1c24ce57c4895c401a8ecc27ea, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: a488ab1c24ce57c4895c401a8ecc27ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.007
@@ -2272,6 +2372,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: a488ab1c24ce57c4895c401a8ecc27ea, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: a488ab1c24ce57c4895c401a8ecc27ea, type: 3}
+      propertyPath: activo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: a488ab1c24ce57c4895c401a8ecc27ea, type: 3}
+      propertyPath: enMano
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: a488ab1c24ce57c4895c401a8ecc27ea, type: 3}
@@ -2471,6 +2579,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -301697273035019575, guid: 06ba48d15ae48dd4b98ee071c321ac1d, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: 06ba48d15ae48dd4b98ee071c321ac1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.00063464046
@@ -2509,6 +2621,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1203094023935326148, guid: 06ba48d15ae48dd4b98ee071c321ac1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: 06ba48d15ae48dd4b98ee071c321ac1d, type: 3}
+      propertyPath: activo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2561624643731152311, guid: 06ba48d15ae48dd4b98ee071c321ac1d, type: 3}
+      propertyPath: enMano
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: 06ba48d15ae48dd4b98ee071c321ac1d, type: 3}

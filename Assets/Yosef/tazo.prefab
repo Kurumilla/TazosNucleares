@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -8667337384998541987}
   m_Layer: 3
   m_Name: tazo
-  m_TagString: Untagged
+  m_TagString: Tazo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,6 +149,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activo: 1
   enMano: 1
-  bounciness: 1
-  energyLoss: 1
-  maxPower: 50

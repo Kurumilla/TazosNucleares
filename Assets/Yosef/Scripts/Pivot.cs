@@ -30,11 +30,11 @@ public class Pivot : MonoBehaviour
             // Modify variables
             clockwisePosition += Input.GetAxis("Horizontal") * speed * Time.deltaTime;
             distanceFromCenter -= Input.GetAxis("Vertical") * speed * Time.deltaTime;
-            distanceFromCenter = Mathf.Clamp(distanceFromCenter, 1f, 90f);   //No going around the top or under the floor.
+            distanceFromCenter = Mathf.Clamp(distanceFromCenter, 1f, 80f);   //No going around the top or under the floor.
 
             // Slot variables into 0-1 range
-            float s = clockwisePosition / 360;
-            float t = distanceFromCenter / 90f;
+            float s = clockwisePosition / 57.45f;
+            float t = distanceFromCenter / 50f;
 
             // Apply changes to world
             float x = Mathf.Cos(s) * Mathf.Sin(t) * radius;
@@ -45,5 +45,10 @@ public class Pivot : MonoBehaviour
             // Rotate back into the playground
             transform.LookAt(Vector3.zero);
         }
+    }
+
+    public void SetMode(bool _active)
+    {
+        active = _active;
     }
 }

@@ -34,4 +34,9 @@ public class Swivel : MonoBehaviour
             transform.localEulerAngles = currentRot;
         }
     }
+
+    public void SetMode(bool _active)
+    {
+        active = _active;
+    }
 }

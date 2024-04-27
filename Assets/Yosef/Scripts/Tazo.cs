@@ -4,50 +4,47 @@ using UnityEngine;
 
 public class Tazo : MonoBehaviour
 {
-    [Header("Game Status")]
     Rigidbody rb;
+    RoundOver gg;
+
+    [Header("Game Status")]
     public bool activo = false;
     public bool enMano = false;
-
-    [Header("Physics Settings")]
-    public float bounciness;
-    public int energyLoss = 4;
-    public float maxPower = 20f;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        gg = GameObject.Find("Scripts Manager").GetComponent<RoundOver>();
     }
 
     private void OnCollisionEnter(Collision col)
     {
+        gg.countdown = 5f; //Reset countdown because tazos are still bouncing around
         Tazo other = col.gameObject.GetComponent<Tazo>();
         if (activo && other!=null)
         {
-            Vector3 power = rb.velocity; // energyLoss;
-            power.y *= -bounciness / (bounciness + other.bounciness);
-            /* Clamps
-            power.x = Mathf.Clamp(power.x, -maxPower, maxPower);
-            power.y = Mathf.Clamp(power.y, -maxPower, maxPower);
-            power.z = Mathf.Clamp(power.z, -maxPower, maxPower);*/
+            Vector3 power = rb.velocity;
+            power.y *= -1;
             // Apply impulse
             other.rb.AddForceAtPosition(power, col.contacts[0].point, ForceMode.Impulse);
             activo = false;
         }
     }
 
-    private void Shoot()
-    {
-        rb.AddForce(20 * transform.forward, ForceMode.Impulse);
-        rb.useGravity = true;
-        transform.SetParent(null);
-        enMano = false;
-    }
-
     public void OnClick()
     {
         if (enMano)
-            Shoot();
+        {
+            // Shoot
+            float _value = GameObject.Find("Fuerza de lanzamiento").GetComponent<OscillatingBar>().value;
+            rb.AddForce(_value * 30f * transform.forward, ForceMode.Impulse);
+            // Edit Variables
+            rb.useGravity = true;
+            transform.SetParent(null);
+            enMano = false;
+            // Start Count
+            gg.BouncingPhase();
+        }
     }
 
     public bool CheckOrientation()

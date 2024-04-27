@@ -7,21 +7,16 @@ using UnityEngine;
 
 public class Pivot : MonoBehaviour
 {
-    Vector3 startingPos;
-
     [Header("Main Settings")]
     public bool active = true;
     public float speed = 10f;
     public float radius = 1f;
+    public Vector3 center;
+    public Vector2 clamps;
 
     [Header("Current Position (in angles)")]
     public float clockwisePosition = 0f;
     public float distanceFromCenter = 0f;
-
-    void Start()
-    {
-        startingPos = transform.position;
-    }
 
     void Update()
     {
@@ -30,7 +25,7 @@ public class Pivot : MonoBehaviour
             // Modify variables
             clockwisePosition += Input.GetAxis("Horizontal") * speed * Time.deltaTime;
             distanceFromCenter -= Input.GetAxis("Vertical") * speed * Time.deltaTime;
-            distanceFromCenter = Mathf.Clamp(distanceFromCenter, 1f, 80f);   //No going around the top or under the floor.
+            distanceFromCenter = Mathf.Clamp(distanceFromCenter, clamps.x, clamps.y);   //No going around the top or under the floor.
 
             // Slot variables into 0-1 range
             float s = clockwisePosition / 57.45f;
@@ -40,7 +35,7 @@ public class Pivot : MonoBehaviour
             float x = Mathf.Cos(s) * Mathf.Sin(t) * radius;
             float y = Mathf.Cos(t) * radius;
             float z = Mathf.Sin(s) * Mathf.Sin(t) * radius;
-            transform.position = new Vector3(x, y, z) + startingPos;
+            transform.position = new Vector3(x, y, z) + center;
 
             // Rotate back into the playground
             transform.LookAt(Vector3.zero);

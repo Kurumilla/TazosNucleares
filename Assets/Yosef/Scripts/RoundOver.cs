@@ -10,38 +10,54 @@ public class RoundOver : MonoBehaviour
     public bool active = true;
     public float countdown;
     private float maxCount;
-    public int heads, tails;
+
+    [Header("Scores")]
+    public bool isPlayersTurn;  // 0 = Player
+    public int[] score;         // 1 = Enemy
+
+    [Header("Lista de tazos")]
+    public List<GameObject> tazos;
 
     [Header("Object References")]
-    GameObject canvas;
-    public TMP_Text txtHeadsCounter, txtTailsCounter;
+    public Transform camera;
+    public UI_Shrink scoreboard;
+    public TMP_Text txtHeadsCounter;
+    public TMP_Text txtTailsCounter;
 
-    void Start()
+    void Awake()
     {
-        canvas = GameObject.Find("Canvas");
         maxCount = countdown;
+        PlayerPhase();
     }
 
     void Update()
     {
         if (active && countdown<=0)
         {
-            // Setup
-            AimingPhase();
-            heads = 0;
-            tails = 0;
+            active = false;
             // Count
             GameObject[] board = GameObject.FindGameObjectsWithTag("Tazo");
             foreach (GameObject item in board)
             {
-                if (Vector3.Angle(item.transform.up, Vector3.up) < 90f)
-                    heads++;
-                else
-                    tails++;
+                if (Vector3.Angle(item.transform.forward, Vector3.up) < 90f)
+                {
+                    score[isPlayersTurn ? 0 : 1]++; //Use boolean as int
+                    Destroy(item);
+                }
             }
-            // Display
-            txtHeadsCounter.text = "HEADS: " + heads.ToString();
-            txtTailsCounter.text = "TAILS: " + tails.ToString();
+            // Update score
+            txtHeadsCounter.text = "PLAYER: " + score[0].ToString();
+            txtTailsCounter.text = "ENEMY: " + score[1].ToString();
+            scoreboard.ShowScores();
+
+            // Change turn
+            isPlayersTurn = !isPlayersTurn;
+            if (isPlayersTurn && tazos.Count > 0)
+                PlayerPhase();
+            else if (tazos.Count > 0)
+                EnemyPhase();
+            else
+                GameOver();
         }
         else if (active)
         {
@@ -49,16 +65,41 @@ public class RoundOver : MonoBehaviour
         }
     }
 
-    public void BouncingPhase()
+    // Time to watch the tazos bounce around
+    public void SystemPhase()
     {
         countdown = maxCount;
         active = true;
-        canvas.SetActive(false);
     }
 
-    public void AimingPhase()
+    private void PlayerPhase()
     {
-        active = false;
-        canvas.SetActive(true);
+        // Spawn tazo at player's hand
+        GameObject chosen = (GameObject)Instantiate(tazos[0], camera);
+        chosen.transform.localPosition = new Vector3(0, -0.2f, 0.5f);
+    }
+
+    private void EnemyPhase()
+    {
+        // Locate target
+        GameObject[] board = GameObject.FindGameObjectsWithTag("Tazo");
+        Vector3 pos = new Vector3(0, 1f, 0);
+        Vector3 rot = new Vector3(1f, 0, 0);
+
+        // Exclude self
+        if (board[0] != gameObject)
+            pos += board[0].transform.position;
+        else
+            pos += board[1].transform.position;
+
+        // Spawn tazo above the target
+        GameObject token = (GameObject)Instantiate(tazos[0], pos, Quaternion.Euler(rot));
+        token.GetComponent<Tazo>().OnClick();
+        tazos.RemoveAt(0); //Enemy removes because they go 2nd
+    }
+
+    private void GameOver()
+    {
+        //a
     }
 }

@@ -24,7 +24,8 @@ public class UI_Shrink : MonoBehaviour
         rect = GetComponent<RectTransform>();
     }
 
-    void OnEnable()
+    // Update the scoreboard and make it real big
+    public void ShowScores()
     {
         delay = maxDelay;
         progress = 0;
@@ -33,6 +34,7 @@ public class UI_Shrink : MonoBehaviour
         rect.sizeDelta = Vector2.zero;
     }
 
+    // Shrink to normal size over time
     void Update()
     {
         if (delay > 0)

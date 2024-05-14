@@ -28,13 +28,13 @@ public class Pivot : MonoBehaviour
             distanceFromCenter = Mathf.Clamp(distanceFromCenter, clamps.x, clamps.y);   //No going around the top or under the floor.
 
             // Slot variables into 0-1 range
-            float s = clockwisePosition / 57.45f;
-            float t = distanceFromCenter / 50f;
+            float phi = clockwisePosition / 57.45f;
+            float theta = distanceFromCenter / 50f;
 
             // Apply changes to world
-            float x = Mathf.Cos(s) * Mathf.Sin(t) * radius;
-            float y = Mathf.Cos(t) * radius;
-            float z = Mathf.Sin(s) * Mathf.Sin(t) * radius;
+            float x = Mathf.Cos(phi) * Mathf.Sin(theta) * radius;
+            float y = Mathf.Cos(theta) * radius;
+            float z = Mathf.Sin(phi) * Mathf.Sin(theta) * radius;
             transform.position = new Vector3(x, y, z) + center;
 
             // Rotate back into the playground

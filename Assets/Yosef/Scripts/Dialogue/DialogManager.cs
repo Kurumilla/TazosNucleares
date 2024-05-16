@@ -38,6 +38,7 @@ public static class JsonHelper
 [Serializable]
 public class Option
 {
+    public string choiceText;
     public string answerText;
 }
 
@@ -52,21 +53,30 @@ public class Dialog
 
 public class DialogManager : MonoBehaviour
 {
-    [Header("Object References")]
+    [Header("UI References")]
     public Write dialogBox;
     public Image characterImg;
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI instructions;
     public Button[] choices;
+    [Header("Object References")]
+    public BasicMovement player;
     [Header("Data")]
     public TextAsset initialJson;
 
     int n = 0;
+    private bool active;
     private Dialog[] response;
     
     void Start()
     {
         StartNewDialogue(initialJson);
+    }
+
+    void Update()
+    {
+        if (active && Input.GetKeyDown(KeyCode.E))
+            NextDialog();
     }
 
     public void StartNewDialogue(TextAsset json)
@@ -78,14 +88,28 @@ public class DialogManager : MonoBehaviour
         }
         // Detecta error
         catch (Exception e) { Debug.LogError("No se pudo leer el archivo: " + e); }
+
         // Escribir el primer dialogo
+        n = 0;
+        active = true;
+        dialogBox.gameObject.SetActive(true);
+        player.activado = false;
         DialogEvent();
     }
 
     public void NextDialog()
     {
         n++;
-        DialogEvent();
+        if (n < response.Length)
+        {
+            DialogEvent();
+        }
+        else
+        {
+            active = false;
+            player.activado = true;
+            dialogBox.gameObject.SetActive(false);
+        }
     }
 
     public void PrevDialog()
@@ -98,17 +122,18 @@ public class DialogManager : MonoBehaviour
     {
         switch (response[n].isEvent)
         {
-            case "CambioDePersonaje":   //Cambiar la imagen
+            case "CambiarPersonaje":   //Cambiar la imagen
                 characterImg.sprite = Resources.Load<Sprite>("Prints/" + response[n].img);
                 characterName.text = response[n].text;
                 NextDialog();
                 break;
             case "MostrarOpciones": //Desplegar los botones de opciones con el texto indicado
+                active = false;
                 dialogBox.gameObject.SetActive(false);
                 for (int i=0; i<response[n].options.Length; i++)
                 {
                     choices[i].gameObject.SetActive(true);
-                    choices[i].GetComponentInChildren<Text>().text = response[n].options[i].answerText;
+                    choices[i].GetComponentInChildren<TextMeshProUGUI>().text = response[n].options[i].choiceText;
                 }
                 break;
             default:                //Diálogo simple
@@ -119,9 +144,12 @@ public class DialogManager : MonoBehaviour
 
     public void ChooseAnswer(int x)
     {
-        //Responder a la respuesta
+        //Apagar opciones
         foreach (Button choice in choices)
             choice.gameObject.SetActive(false);
-        NextDialog();
+        //Mostrar respuesta
+        active = true;
+        dialogBox.gameObject.SetActive(true);
+        dialogBox.NewOutput(response[n].options[x].answerText);
     }
 }

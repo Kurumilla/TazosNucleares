@@ -1,1 +1,31 @@
-﻿{"inkVersion":21,"root":[["^!!!","#","^speaker:NPC","/#","#","^portrait:protragonist_one ","/#","#","^layout:right","/#","\n","^TE HE PICHADO TIO CHAVAL!","\n","^TIME TO D-D-D-DUEL!","\n",["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": "png_bb_2_1",
+      "text": "Rival"
+    },
+    {
+      "text": "A!!!"
+    },
+    {
+      "text": "TE HE PICHADO TIO CHAVAL"
+    },
+    {
+      "text": "¿QUIERES JUGAR TAZOS?"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "choiceText": "Si",
+          "answerText": "MUY BIEN, VAMOS A LA CASA DE ARRIBA"
+        },
+        {
+          "choiceText": "No",
+          "answerText": "BRUH"
+        }
+      ]
+    }
+  ]
+}

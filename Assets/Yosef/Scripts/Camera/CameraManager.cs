@@ -26,9 +26,10 @@ public class CameraManager : MonoBehaviour
         pivot = GetComponent<Pivot>();
         swivel = GetComponentInChildren<Swivel>();
         focus = GetComponent<Focus>();
+        StartCoroutine("PresentPlayers");
     }
 
-    void Update()
+    private void Update()
     {
         ChangeMode();
         switch (mode)
@@ -50,7 +51,7 @@ public class CameraManager : MonoBehaviour
 
     private void ChangeMode()
     {
-        if (mode != Mode.Focus && _mode == Mode.Focus)     //If entering focus, set variables
+        if (mode != Mode.Focus && _mode == Mode.Focus)          //If entering focus, set variables
             SetFocus();
         else if (mode == Mode.Focus && _mode != Mode.Focus)     //If exit from focus, go to unfocus instead
             mode = Mode.Unfocus;
@@ -64,5 +65,23 @@ public class CameraManager : MonoBehaviour
     {
         focus.SetVariables(target);
         mode = Mode.Focus;
+    }
+
+    private IEnumerator PresentPlayers()
+    {
+        yield return new WaitForSeconds(2f);
+        //Presentar al jugador
+        target = GameObject.Find("Player").transform;
+        _mode = Mode.Focus;
+        yield return new WaitForSeconds(2f);
+        //Return
+        _mode = Mode.Pivot;
+        yield return new WaitForSeconds(2f);
+        //Presentar al enemigo
+        target = GameObject.Find("Enemy").transform;
+        _mode = Mode.Focus;
+        yield return new WaitForSeconds(2f);
+        //Return
+        _mode = Mode.Pivot;
     }
 }

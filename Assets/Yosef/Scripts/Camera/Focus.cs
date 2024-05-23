@@ -31,7 +31,10 @@ public class Focus : MonoBehaviour
         progress = 0;
         startingPos = transform.position;
         startingRot = transform.rotation;
-        targetPos = _target.position + Vector3.Normalize(_target.position) * distance;
+        if (_target.gameObject.CompareTag("Tazo"))
+            targetPos = _target.position + Vector3.Normalize(_target.position) * distance;
+        else
+            targetPos = _target.position + Vector3.Scale(Vector3.Normalize(_target.position), new Vector3(-1, 1, -1)) * (2 * distance);
         targetRot = Quaternion.LookRotation(_target.position - targetPos, Vector3.up);
     }
 }

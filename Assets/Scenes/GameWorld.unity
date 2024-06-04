@@ -55194,8 +55194,8 @@ MonoBehaviour:
   - {fileID: 1621028791373857721}
   - {fileID: 1636326842736316774}
   player: {fileID: 847920515}
-  currentNPC: {fileID: 0}
-  initialJson: {fileID: 4900000, guid: 515a7603bba8e884bb60be4199a6bd72, type: 3}
+  currentNPC: {fileID: 772899724}
+  initialJson: {fileID: 4900000, guid: 15131a9909e1af64ab5dc8fa545b86f3, type: 3}
 --- !u!4 &1909551572
 Transform:
   m_ObjectHideFlags: 0
@@ -61497,7 +61497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e472700350e6df64f8633a4c06ae1858, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapPosition: {x: 0, y: 0, z: 0}
+  playerPos: {x: 0, y: 0, z: 0}
   personaje: 0
   npc: 00000000
   debugWins: 0

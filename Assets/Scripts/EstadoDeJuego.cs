@@ -14,7 +14,7 @@ public enum NPC_Status
 public class EstadoDeJuego : MonoBehaviour
 {
     [Header("Para lo de Kurumilla:")]
-    public Vector3 mapPosition;
+    public Vector3 playerPos;
     [Header("Para Miguel y Omar:")]
     public int personaje;
     [Header("Para lo de Yosef:")]

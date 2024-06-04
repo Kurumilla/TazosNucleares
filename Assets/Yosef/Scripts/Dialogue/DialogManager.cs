@@ -32,11 +32,14 @@ public class DialogManager : MonoBehaviour
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI instructions;
     public Button[] choices;
+
     [Header("Object References")]
     public BasicMovement player;
     public NPC_Dialogue currentNPC;
+
     [Header("Data")]
     public TextAsset initialJson;
+    private EstadoDeJuego gameState;
     //Variables privadas para leer el json
     int n = 0;
     private bool active;
@@ -44,8 +47,12 @@ public class DialogManager : MonoBehaviour
     
     void Start()
     {
-        //Usar la narración al iniciar la escena
-        StartNewDialogue(initialJson);
+        gameState = GameObject.Find("Estado de Juego").GetComponent<EstadoDeJuego>();
+        // La narración se activa si es tu primera vez aqui
+        if (gameState.playerPos == Vector3.zero)
+            StartNewDialogue(initialJson);
+        else
+            player.gameObject.transform.position = gameState.playerPos;
     }
 
     void Update()
@@ -134,7 +141,8 @@ public class DialogManager : MonoBehaviour
         switch (response[n].options[x].isEffect)
         {
             case "Play":
-                GameObject.Find("Estado de Juego").GetComponent<EstadoDeJuego>().personaje = currentNPC.id;
+                gameState.personaje = currentNPC.id;
+                gameState.playerPos = player.gameObject.transform.position;
                 SceneManager.LoadScene("GameTest");
                 break;
         }

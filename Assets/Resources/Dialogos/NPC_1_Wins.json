@@ -1,0 +1,15 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": "png_bb_2_1",
+      "text": "Rival"
+    },
+    {
+      "text": "WOW ERES MUY BUENO"
+    },
+    {
+      "text": "AQUI ESTA TU RECOMPENZA"
+    }
+  ]
+}

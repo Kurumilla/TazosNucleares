@@ -1,0 +1,32 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": "png_bb_2_1",
+      "text": "Rival"
+    },
+    {
+      "text": "STOP"
+    },
+    {
+      "text": "NO TE CONOZCO"
+    },
+    {
+      "text": "¿QUIERES JUGAR TAZOS?"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "Si",
+          "answerText": "MUY BIEN, VAMOS A LA CASA DE ARRIBA"
+        },
+        {
+          "choiceText": "No",
+          "answerText": "BRUH"
+        }
+      ]
+    }
+  ]
+}

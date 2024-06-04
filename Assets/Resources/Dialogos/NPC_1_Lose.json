@@ -6,24 +6,22 @@
       "text": "Rival"
     },
     {
-      "text": "A!!!"
+      "text": "¡JAJA TE GANE!"
     },
     {
-      "text": "TE HE PICHADO TIO CHAVAL"
-    },
-    {
-      "text": "¿QUIERES JUGAR TAZOS?"
+      "text": "¿BUSCAS REVANCHA REVANCHITA?"
     },
     {
       "isEvent": "MostrarOpciones",
       "options": [
         {
+          "isEffect": "Play",
           "choiceText": "Si",
           "answerText": "MUY BIEN, VAMOS A LA CASA DE ARRIBA"
         },
         {
           "choiceText": "No",
-          "answerText": "BRUH"
+          "answerText": "OK LOSER"
         }
       ]
     }

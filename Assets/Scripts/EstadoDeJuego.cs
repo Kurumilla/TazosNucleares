@@ -1,24 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //Para lo de Yosef
 public enum NPC_Status
 {
-    Default,    //Aun no has interactuado con este
-    Victoria,   //Player wins: "Me ganaste jaja"
-    Derrota     //Player lose: "¿Quieres intentar otra vez?"
+    Default,        //Aun no has interactuado con este
+    PlayerWins,     //"Me ganaste jaja"
+    PlayerLose      //"¿Quieres intentar otra vez?"
 }
 
-public class JsonLector : MonoBehaviour
+public class EstadoDeJuego : MonoBehaviour
 {
-    public Vector3 mapPosition;     //Para lo de Kurumilla
-    public int personaje;           //Para lo de Miguel y Omar
-
-    public NPC_Status npc1;
-    public NPC_Status npc2;
-    public NPC_Status npc3;
-    // etc
+    [Header("Para lo de Kurumilla:")]
+    public Vector3 mapPosition;
+    [Header("Para Miguel y Omar:")]
+    public int personaje;
+    [Header("Para lo de Yosef:")]
+    public NPC_Status[] npc;
+    public bool debugWins, debugLose;
 
     void Awake()
     {
@@ -28,5 +29,21 @@ public class JsonLector : MonoBehaviour
             Destroy(this.gameObject);
 
         DontDestroyOnLoad(this.gameObject);
+    }
+
+    void Update()
+    {
+        if (debugWins)
+        {
+            debugWins = false;
+            npc[0] = NPC_Status.PlayerWins;
+            SceneManager.LoadScene("GameWorld");
+        }
+        else if (debugLose)
+        {
+            debugLose = false;
+            npc[0] = NPC_Status.PlayerLose;
+            SceneManager.LoadScene("GameWorld");
+        }
     }
 }

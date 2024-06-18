@@ -20,13 +20,15 @@ public class CameraManager : MonoBehaviour
 
     bool isDone;
     public Transform target;
+    private RoundOver ro;
     
     void Start()
     {
+        ro = GameObject.Find("Scripts Manager").GetComponent<RoundOver>();
         pivot = GetComponent<Pivot>();
         swivel = GetComponentInChildren<Swivel>();
         focus = GetComponent<Focus>();
-        StartCoroutine("PresentPlayers");
+        //StartCoroutine("PresentPlayers");
     }
 
     private void Update()
@@ -61,10 +63,18 @@ public class CameraManager : MonoBehaviour
             mode = _mode;
     }
 
-    public void SetFocus()
+    private void SetFocus()
     {
         focus.SetVariables(target);
         mode = Mode.Focus;
+    }
+
+    public void UI_Button(bool _btn)
+    {
+        if (_btn)
+            mode = Mode.Pivot;
+        else
+            mode = Mode.Swivel;
     }
 
     private IEnumerator PresentPlayers()
@@ -83,5 +93,7 @@ public class CameraManager : MonoBehaviour
         yield return new WaitForSeconds(2f);
         //Return
         _mode = Mode.Pivot;
+        yield return new WaitForSeconds(2f);
+        ro.PlayerPhase();
     }
 }

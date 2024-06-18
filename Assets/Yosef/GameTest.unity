@@ -183,6 +183,10 @@ PrefabInstance:
       propertyPath: enMano
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5843791818810312989, guid: c58a87ca402429d43b885607eab90e31, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: c58a87ca402429d43b885607eab90e31, type: 3}
       propertyPath: m_Name
       value: Tazo_Metal_2
@@ -275,9 +279,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1178410195}
-        m_TargetAssemblyTypeName: Pivot, Assembly-CSharp
-        m_MethodName: SetMode
+      - m_Target: {fileID: 1178410198}
+        m_TargetAssemblyTypeName: CameraManager, Assembly-CSharp
+        m_MethodName: UI_Button
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -286,18 +290,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 901001518}
-        m_TargetAssemblyTypeName: Swivel, Assembly-CSharp
-        m_MethodName: SetMode
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &205714002
 MonoBehaviour:
@@ -612,7 +604,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.2
+  m_fontSize: 26.55
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -954,9 +946,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1178410195}
-        m_TargetAssemblyTypeName: Pivot, Assembly-CSharp
-        m_MethodName: SetMode
+      - m_Target: {fileID: 1178410198}
+        m_TargetAssemblyTypeName: CameraManager, Assembly-CSharp
+        m_MethodName: UI_Button
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -965,18 +957,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 901001518}
-        m_TargetAssemblyTypeName: Swivel, Assembly-CSharp
-        m_MethodName: SetMode
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &900793792
 MonoBehaviour:
@@ -1331,7 +1311,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.8
+  m_fontSize: 20.8
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1615,7 +1595,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 180.6
+  m_fontSize: 188.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1699,7 +1679,7 @@ MonoBehaviour:
   speed: 180
   radius: 1.1
   center: {x: 0, y: 0.75, z: 0}
-  clamps: {x: 1, y: 70}
+  clamps: {x: 0, y: 70}
   clockwisePosition: -90
   distanceFromCenter: 70
 --- !u!4 &1178410196
@@ -1807,6 +1787,10 @@ PrefabInstance:
       propertyPath: enMano
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5843791818810312989, guid: 71931218055cc234a9d5270c754e5bf9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: 71931218055cc234a9d5270c754e5bf9, type: 3}
       propertyPath: m_Name
       value: Tazo_2
@@ -1900,7 +1884,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 180.6
+  m_fontSize: 188.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2010,6 +1994,10 @@ PrefabInstance:
       propertyPath: enMano
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5843791818810312989, guid: aeee3b6286fd61e4f98167335470f734, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: aeee3b6286fd61e4f98167335470f734, type: 3}
       propertyPath: m_Name
       value: Tazo_MegaMetal_1
@@ -2077,6 +2065,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2561624643731152311, guid: 1518021f2bdb9614ea4c3cb9db3520ac, type: 3}
       propertyPath: enMano
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5843791818810312989, guid: 1518021f2bdb9614ea4c3cb9db3520ac, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: 1518021f2bdb9614ea4c3cb9db3520ac, type: 3}
@@ -2148,6 +2140,10 @@ PrefabInstance:
       propertyPath: enMano
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5843791818810312989, guid: 4b702fcf31c5473459909f4f3eca6459, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: 4b702fcf31c5473459909f4f3eca6459, type: 3}
       propertyPath: m_Name
       value: Tazo_1
@@ -2215,6 +2211,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2561624643731152311, guid: 880f1aa04446b3944ab46f5392537dbc, type: 3}
       propertyPath: enMano
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5843791818810312989, guid: 880f1aa04446b3944ab46f5392537dbc, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: 880f1aa04446b3944ab46f5392537dbc, type: 3}
@@ -2286,6 +2286,10 @@ PrefabInstance:
       propertyPath: enMano
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5843791818810312989, guid: 4866e5d1ef4986046af79e4076827e43, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: 4866e5d1ef4986046af79e4076827e43, type: 3}
       propertyPath: m_Name
       value: Tazo_Mega_1
@@ -2313,7 +2317,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1839672411
 Transform:
   m_ObjectHideFlags: 0
@@ -2341,7 +2345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d56e29a971b0d047a6490f0ebebb731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
   value: 0
 --- !u!23 &1839672413
 MeshRenderer:
@@ -2451,6 +2455,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2561624643731152311, guid: bb77592809ca1f9488fb637a087af356, type: 3}
       propertyPath: enMano
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5843791818810312989, guid: bb77592809ca1f9488fb637a087af356, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: bb77592809ca1f9488fb637a087af356, type: 3}
@@ -2593,6 +2601,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2561624643731152311, guid: a488ab1c24ce57c4895c401a8ecc27ea, type: 3}
       propertyPath: enMano
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5843791818810312989, guid: a488ab1c24ce57c4895c401a8ecc27ea, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: a488ab1c24ce57c4895c401a8ecc27ea, type: 3}
@@ -2842,6 +2854,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2561624643731152311, guid: 06ba48d15ae48dd4b98ee071c321ac1d, type: 3}
       propertyPath: enMano
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5843791818810312989, guid: 06ba48d15ae48dd4b98ee071c321ac1d, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6791479269036590220, guid: 06ba48d15ae48dd4b98ee071c321ac1d, type: 3}

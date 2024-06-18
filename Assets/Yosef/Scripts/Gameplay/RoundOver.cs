@@ -73,14 +73,14 @@ public class RoundOver : MonoBehaviour
         active = true;
     }
 
-    private void PlayerPhase()
+    public void PlayerPhase()
     {
         // Spawn tazo at player's hand
         GameObject chosen = (GameObject)Instantiate(tazos[0], camera);
         chosen.transform.localPosition = new Vector3(0, -0.2f, 0.5f);
     }
 
-    private void EnemyPhase()
+    public void EnemyPhase()
     {
         // Locate target
         GameObject[] board = GameObject.FindGameObjectsWithTag("Tazo");

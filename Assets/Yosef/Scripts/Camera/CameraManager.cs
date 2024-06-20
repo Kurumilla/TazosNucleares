@@ -28,7 +28,7 @@ public class CameraManager : MonoBehaviour
         pivot = GetComponent<Pivot>();
         swivel = GetComponentInChildren<Swivel>();
         focus = GetComponent<Focus>();
-        //StartCoroutine("PresentPlayers");
+        StartCoroutine("PresentPlayers");
     }
 
     private void Update()
@@ -69,12 +69,12 @@ public class CameraManager : MonoBehaviour
         mode = Mode.Focus;
     }
 
-    public void UI_Button(bool _btn)
+    public void UI_Button()
     {
-        if (_btn)
-            mode = Mode.Pivot;
+        if (_mode == Mode.Pivot)
+            _mode = Mode.Swivel;
         else
-            mode = Mode.Swivel;
+            _mode = Mode.Pivot;
     }
 
     private IEnumerator PresentPlayers()

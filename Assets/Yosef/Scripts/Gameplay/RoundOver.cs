@@ -28,7 +28,6 @@ public class RoundOver : MonoBehaviour
     void Awake()
     {
         maxCount = countdown;
-        PlayerPhase();
     }
 
     void Update()

@@ -32,24 +32,24 @@ public class MenuController : MonoBehaviour
 
     public void _loadingWindowActive()
     {
-        mainWindow.SetActive(!mainWindow.activeSelf);
+        //mainWindow.SetActive(!mainWindow.activeSelf);
         loadingWindow.SetActive(!loadingWindow.activeSelf);
     }
     public void _optionWindowActive()
     {
-        mainWindow.SetActive(!mainWindow.activeSelf);
+        //mainWindow.SetActive(!mainWindow.activeSelf);
         optionWindow.SetActive(!optionWindow.activeSelf);
     }
 
     public void _creditsWindowActive()
     {
-        mainWindow.SetActive(!mainWindow.activeSelf);
+        //mainWindow.SetActive(!mainWindow.activeSelf);
         creditsWindow.SetActive(!creditsWindow.activeSelf);
     }
 
     public void _quitWindowActive()
     {
-        mainWindow.SetActive(!mainWindow.activeSelf);
+        //mainWindow.SetActive(!mainWindow.activeSelf);
         quitWindow.SetActive(!quitWindow.activeSelf);
     }
 }

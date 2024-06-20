@@ -5,21 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/MainMenu_Old.unity
-    guid: cab577dbf1283674e8904946e733d9e6
-  - enabled: 1
-    path: Assets/Scenes/Video.unity
-    guid: b55db124de070dd499c1dd659f9d8163
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: d773433c064cbf743901f61588dc8b86
   - enabled: 1
-    path: Assets/Scenes/GameWorld.unity
-    guid: e3465cae931e64e419e19abb12aa58b3
-  - enabled: 1
     path: Assets/Scenes/WorldMap.unity
     guid: 80f97298b9420b943a9846dd06f112b0
+  - enabled: 1
+    path: Assets/Scenes/Video.unity
+    guid: b55db124de070dd499c1dd659f9d8163
+  - enabled: 1
+    path: Assets/Scenes/GameWorld.unity
+    guid: e3465cae931e64e419e19abb12aa58b3
   - enabled: 1
     path: Assets/Yosef/GameTest.unity
     guid: 73fb4566c463f5145ad7aba29b429dec

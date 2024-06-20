@@ -2,14 +2,19 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": "png_bb_2_1",
-      "text": "Rival"
+      "img": "NPC_Traje_02",
+      "text": "Traje"
     },
     {
       "text": "¿YA VISTE?"
     },
     {
       "text": "SOY EL MÁS FUERTE"
+    },
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": "NPC_Traje_01",
+      "text": "Traje"
     },
     {
       "isEvent": "MostrarOpciones",

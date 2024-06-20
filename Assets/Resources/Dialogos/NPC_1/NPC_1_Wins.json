@@ -2,11 +2,11 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": "png_bb_2_1",
-      "text": "Rival"
+      "img": "NPC_Cafecito_03",
+      "text": "Cafecito"
     },
     {
-      "text": "SUPONGO QUE NO SOY MAS FUERTE DE LO QUE CREI"
+      "text": "SUPONGO QUE NO SOY MÁS FUERTE DE LO QUE CREÍ"
     }
   ]
 }

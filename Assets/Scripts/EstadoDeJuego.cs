@@ -19,7 +19,6 @@ public class EstadoDeJuego : MonoBehaviour
     public int personaje;
     [Header("Para lo de Yosef:")]
     public NPC_Status[] npc;
-    public bool debugWins, debugLose;
 
     void Awake()
     {
@@ -31,19 +30,9 @@ public class EstadoDeJuego : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
-    void Update()
+    public void GameOver(bool _playerWins)
     {
-        if (debugWins)
-        {
-            debugWins = false;
-            npc[0] = NPC_Status.PlayerWins;
-            SceneManager.LoadScene("GameWorld");
-        }
-        else if (debugLose)
-        {
-            debugLose = false;
-            npc[0] = NPC_Status.PlayerLose;
-            SceneManager.LoadScene("GameWorld");
-        }
+        npc[personaje] = _playerWins ? NPC_Status.PlayerWins : NPC_Status.PlayerLose;
+        SceneManager.LoadScene("WorldMap");
     }
 }

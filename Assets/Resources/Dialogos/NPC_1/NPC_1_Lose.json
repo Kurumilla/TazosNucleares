@@ -2,22 +2,27 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": "png_bb_2_1",
-      "text": "Rival"
+      "img": "NPC_Cafecito_02",
+      "text": "Cafecito"
     },
     {
       "text": "PARECE QUE SOY SUPERIOR A TI"
+    },
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": "NPC_Cafecito_01",
+      "text": "Cafecito"
     },
     {
       "isEvent": "MostrarOpciones",
       "options": [
         {
           "isEffect": "Play",
-          "choiceText": "TODAVÍA TENGO ENERGÍA",
+          "choiceText": "¡TODAVÍA TENGO ENERGÍA!",
           "answerText": "VAMOS A VER SI ES CIERTO"
         },
         {
-          "choiceText": "VOLVERE",
+          "choiceText": "VOLVERÉ...",
           "answerText": "ESPERO QUE SEAS MÁS FUERTE CUANDO VUELVAS"
         }
       ]

@@ -2,11 +2,19 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": "png_bb_2_1",
-      "text": "Rival"
+      "img": "NPC_BonitaConClase_02",
+      "text": "Clasista"
     },
     {
-      "text": "YA VEZ, NADIE PUEDE CONTRA MI CLASE"
+      "text": "¿YA VEZ?"
+    },
+    {
+      "text": "NADIE PUEDE CONTRA MI CLASE"
+    },
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": "NPC_BonitaConClase_01",
+      "text": "Clasista"
     },
     {
       "isEvent": "MostrarOpciones",

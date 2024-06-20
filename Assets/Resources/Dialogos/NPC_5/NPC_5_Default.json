@@ -2,8 +2,8 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": "png_bb_2_1",
-      "text": "Rival"
+      "img": "NPC_BonitaConClase_01",
+      "text": "Clasista"
     },
     {
       "text": "LOS DE TU CLASE BAJA NO PUEDEN CONTRA MI"

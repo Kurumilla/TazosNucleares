@@ -2,11 +2,16 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": "png_bb_2_1",
-      "text": "Rival"
+      "img": "NPC_Amarillo_02",
+      "text": "Amarillo"
     },
     {
       "text": "¡WOOHOO, LO LOGRE!"
+    },
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": "NPC_Amarillo_01",
+      "text": "Amarillo"
     },
     {
       "isEvent": "MostrarOpciones",

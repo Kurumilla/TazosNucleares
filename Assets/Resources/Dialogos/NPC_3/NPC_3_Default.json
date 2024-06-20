@@ -2,8 +2,8 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": "png_bb_2_1",
-      "text": "Rival"
+      "img": "NPC_Traje_01",
+      "text": "Traje"
     },
     {
       "text": "ESPERO QUE ESTÉS LISTO"
@@ -17,7 +17,7 @@
         {
           "isEffect": "Play",
           "choiceText": "NO ME SUBESTIMES",
-          "answerText": "CONFIADO YA VI, ¡PREPARATE!"
+          "answerText": "CONFIADO YA TE VÍ, ¡PREPÁRATE!"
         },
         {
           "choiceText": "TOMA TU TIEMPO PARA PREPARARTE",

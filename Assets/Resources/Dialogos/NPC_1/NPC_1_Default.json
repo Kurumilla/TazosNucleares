@@ -2,8 +2,8 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": "png_bb_2_1",
-      "text": "Rival"
+      "img": "NPC_Cafecito_01",
+      "text": "Cafecito"
     },
     {
       "text": "A VER SI TIENES LA FUERZA PARA VENCERME"

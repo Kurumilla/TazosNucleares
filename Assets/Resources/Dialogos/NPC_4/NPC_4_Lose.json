@@ -2,14 +2,19 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": "png_bb_2_1",
-      "text": "Rival"
+      "img": "NPC_Chulada_02",
+      "text": "Chulada"
     },
     {
       "text": "¿EN SERIO?"
     },
     {
       "text": "NI PARECE QUE LO INTENTASTE"
+    },
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": "NPC_Chulada_01",
+      "text": "Chulada"
     },
     {
       "isEvent": "MostrarOpciones",

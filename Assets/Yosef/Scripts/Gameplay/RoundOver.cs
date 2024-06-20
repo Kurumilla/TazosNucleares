@@ -101,10 +101,7 @@ public class RoundOver : MonoBehaviour
 
     private void GameOver()
     {
-        if (score[0] > score[1])
-            SceneManager.LoadScene("GameOverWin");
-        else //if (score[0] < score[1])
-            SceneManager.LoadScene("GameOverLose");
+        GameObject.Find("Estado de Juego").GetComponent<EstadoDeJuego>().GameOver(score[0] > score[1]);
     }
 
     public void CambiarTiro()

@@ -1,0 +1,29 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": "png_bb_2_1",
+      "text": "Rival"
+    },
+    {
+      "text": "ESPERO QUE ESTÉS LISTO"
+    },
+    {
+      "text": "¡PORQUE VOY A GANAR!"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "NO ME SUBESTIMES",
+          "answerText": "CONFIADO YA VI, ¡PREPARATE!"
+        },
+        {
+          "choiceText": "TOMA TU TIEMPO PARA PREPARARTE",
+          "answerText": "VEO QUE TIENES MIEDO, PERO ESTÁ BIEN"
+        }
+      ]
+    }
+  ]
+}

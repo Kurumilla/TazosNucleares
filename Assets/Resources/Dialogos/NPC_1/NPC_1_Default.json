@@ -1,0 +1,26 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": "png_bb_2_1",
+      "text": "Rival"
+    },
+    {
+      "text": "A VER SI TIENES LA FUERZA PARA VENCERME"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "YA VEREMOS",
+          "answerText": "¡EMPEZEMOS!"
+        },
+        {
+          "choiceText": "NECESITO PREPARARME",
+          "answerText": "TOMA TU TIEMPO"
+        }
+      ]
+    }
+  ]
+}

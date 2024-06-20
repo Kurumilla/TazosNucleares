@@ -6,22 +6,19 @@
       "text": "Rival"
     },
     {
-      "text": "¡JAJA TE GANE!"
-    },
-    {
-      "text": "¿BUSCAS REVANCHA REVANCHITA?"
+      "text": "¡WOOHOO, LO LOGRE!"
     },
     {
       "isEvent": "MostrarOpciones",
       "options": [
         {
           "isEffect": "Play",
-          "choiceText": "Si",
-          "answerText": "MUY BIEN, VAMOS A LA CASA DE ARRIBA"
+          "choiceText": "AÚN NO HE ACABADO",
+          "answerText": "TE VENCERÉ OTRA VEZ"
         },
         {
-          "choiceText": "No",
-          "answerText": "OK LOSER"
+          "choiceText": "AHORITA REGRESO PARA LA REVANCHA",
+          "answerText": "PARECE QUE NO PUEDES CONTRA MÍ"
         }
       ]
     }

@@ -6,25 +6,22 @@
       "text": "Rival"
     },
     {
-      "text": "STOP"
+      "text": "¿EN SERIO?"
     },
     {
-      "text": "NO TE CONOZCO"
-    },
-    {
-      "text": "¿QUIERES JUGAR TAZOS?"
+      "text": "NI PARECE QUE LO INTENTASTE"
     },
     {
       "isEvent": "MostrarOpciones",
       "options": [
         {
           "isEffect": "Play",
-          "choiceText": "Si",
-          "answerText": "MUY BIEN, VAMOS A LA CASA DE ARRIBA"
+          "choiceText": "OTRA VEZ, SI PUEDO GANAR",
+          "answerText": "ESO ESPERO"
         },
         {
-          "choiceText": "No",
-          "answerText": "BRUH"
+          "choiceText": "TODAVÍA NO PUEDO, PERO VOLVERÉ MÁS FUERTE",
+          "answerText": "LA VERDAD LO DUDO MUCHO"
         }
       ]
     }

@@ -19324,9 +19324,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 1909551571}
-  dialogueDefault: {fileID: 4900000, guid: a36b071f3a910b34c8070a6048ca1d00, type: 3}
-  dialoguePlayerWins: {fileID: 4900000, guid: bafbd0e9dbd33c54e9fab3510489cb57, type: 3}
-  dialoguePlayerLose: {fileID: 4900000, guid: c2586bab4ccd0574aa314311c602e599, type: 3}
+  dialogueDefault: {fileID: 4900000, guid: 654912c3dc8fee746bb17c6875d74beb, type: 3}
+  dialoguePlayerWins: {fileID: 4900000, guid: eea13ae58e6e14048a320c3ed65668ed, type: 3}
+  dialoguePlayerLose: {fileID: 4900000, guid: ec61bceeb59c7eb46b5f059d1b6dd183, type: 3}
   active: 1
   id: 0
   status: 0

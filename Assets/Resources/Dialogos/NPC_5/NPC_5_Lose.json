@@ -1,0 +1,26 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": "png_bb_2_1",
+      "text": "Rival"
+    },
+    {
+      "text": "YA VEZ, NADIE PUEDE CONTRA MI CLASE"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "AUN NO ME DOY POR VENCIDO",
+          "answerText": "ESTÁ BIEN, DE TODOS MODOS TENGO LA VICTORIA ASEGURADA"
+        },
+        {
+          "choiceText": "REGRESARÉ PARA LA REVANCHA",
+          "answerText": "NO VALE LA PENA, ES UNA PÉRDIDA DE TIEMPO"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": "png_bb_2_1",
+      "text": "Rival"
+    },
+    {
+      "text": "¿YA VISTE?"
+    },
+    {
+      "text": "SOY EL MÁS FUERTE"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "TE DEMOSTRARÉ QUE PUEDO GANARTE",
+          "answerText": "TE GANARÉ COMO SIEMPRE"
+        },
+        {
+          "choiceText": "DAME TIEMPO Y TE PODRÉ VENCER",
+          "answerText": "¿YA VES? NO PUEDES GANARME"
+        }
+      ]
+    }
+  ]
+}

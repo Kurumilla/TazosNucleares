@@ -1,0 +1,26 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": "png_bb_2_1",
+      "text": "Rival"
+    },
+    {
+      "text": "¿ESTÁS LISTO PARA TU DERROTA?"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "NO TE CONFÍES TANTO",
+          "answerText": "SIN CONFIANZA NO GANAS"
+        },
+        {
+          "choiceText": "TENGO COSAS QUE HACER",
+          "answerText": "BUENO NO ME DEJES TANTO TIEMPO SOLA"
+        }
+      ]
+    }
+  ]
+}

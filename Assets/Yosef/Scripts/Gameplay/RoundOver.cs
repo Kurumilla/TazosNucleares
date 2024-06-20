@@ -17,6 +17,7 @@ public class RoundOver : MonoBehaviour
     public int[] score;         // 1 = Enemy
 
     [Header("Lista de tazos")]
+    private GameObject current;
     public List<GameObject> tazos;
 
     [Header("Object References")]
@@ -75,8 +76,8 @@ public class RoundOver : MonoBehaviour
     public void PlayerPhase()
     {
         // Spawn tazo at player's hand
-        GameObject chosen = (GameObject)Instantiate(tazos[0], camera);
-        chosen.transform.localPosition = new Vector3(0, -0.2f, 0.5f);
+        current = (GameObject)Instantiate(tazos[0], camera);
+        current.transform.localPosition = new Vector3(0, -0.2f, 0.5f);
     }
 
     public void EnemyPhase()
@@ -104,5 +105,10 @@ public class RoundOver : MonoBehaviour
             SceneManager.LoadScene("GameOverWin");
         else //if (score[0] < score[1])
             SceneManager.LoadScene("GameOverLose");
+    }
+
+    public void CambiarTiro()
+    {
+        current.GetComponent<Tazo>().tiroCurvo = !current.GetComponent<Tazo>().tiroCurvo;
     }
 }

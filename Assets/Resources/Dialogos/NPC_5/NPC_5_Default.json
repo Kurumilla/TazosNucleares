@@ -2,7 +2,7 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": "NPC_BonitaConClase_01",
+      "img": 3,
       "text": "Clasista"
     },
     {

@@ -20,7 +20,7 @@ public class Dialog
 {
     public string isEvent;
     public string text;
-    public string img;
+    public int img;
     public Option[] options;
 }
 
@@ -44,9 +44,11 @@ public class DialogManager : MonoBehaviour
     int n = 0;
     private bool active;
     private Dialog[] response;
+    private Sprite[] spritesheet;
     
     void Start()
     {
+        spritesheet = Resources.LoadAll<Sprite>("Prints/npc_humano_sprites");
         gameState = GameObject.Find("Estado de Juego").GetComponent<EstadoDeJuego>();
         // La narración se activa si es tu primera vez aqui
         if (gameState.playerPos == Vector3.zero)
@@ -109,7 +111,7 @@ public class DialogManager : MonoBehaviour
         switch (response[n].isEvent)
         {
             case "CambiarPersonaje":    //Cambiar la imagen
-                characterImg.sprite = Resources.Load<Sprite>("Prints/" + response[n].img);
+                characterImg.sprite = spritesheet[response[n].img];
                 characterName.text = response[n].text;
                 NextDialog();
                 break;

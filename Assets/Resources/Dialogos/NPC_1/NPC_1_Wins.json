@@ -2,7 +2,7 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": "NPC_Cafecito_03",
+      "img": 8,
       "text": "Cafecito"
     },
     {

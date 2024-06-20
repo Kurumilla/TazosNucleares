@@ -2,7 +2,7 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": "NPC_Chulada_01",
+      "img": 9,
       "text": "Chulada"
     },
     {

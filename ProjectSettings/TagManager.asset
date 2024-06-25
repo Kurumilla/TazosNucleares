@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Tazo
   - Data
+  - Ignore
   layers:
   - Default
   - TransparentFX

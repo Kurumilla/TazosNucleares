@@ -42,22 +42,25 @@ public class Tazo : MonoBehaviour
     
     private void OnTriggerEnter(Collider col)
     {
-        //Reset countdown because tazos are still bouncing around
-        if (gg.countdown < 2.5f)
-            gg.countdown = 2.5f;
-        // Check if other is tazo or floor
-        Tazo other = col.gameObject.GetComponent<Tazo>();
-        if (activo && other!=null)
+        if (col.gameObject.tag != "Ignore")
         {
-            Vector3 knockback = Vector3.up;
-            // Apply impulse
-            other.rb.AddForce(knockback * 2.0f, ForceMode.Impulse);
+            //Reset countdown because tazos are still bouncing around
+            if (gg.countdown < 2.5f)
+                gg.countdown = 2.5f;
+            // Check if other is tazo or floor
+            Tazo other = col.gameObject.GetComponent<Tazo>();
+            if (activo && other != null)
+            {
+                Vector3 knockback = Vector3.up;
+                // Apply impulse
+                other.rb.AddForce(knockback * 2.0f, ForceMode.Impulse);
+            }
+            // Becomes part of the field
+            GetComponent<MeshCollider>().isTrigger = false;
+            rb.useGravity = true;
+            rb.AddForce(Vector3.up * 2.0f, ForceMode.Impulse);
+            activo = false;
         }
-        // Becomes part of the field
-        GetComponent<MeshCollider>().isTrigger = false;
-        rb.useGravity = true;
-        rb.AddForce(Vector3.up * 2.0f, ForceMode.Impulse);
-        activo = false;
     }
     
     private void OnColliderEnter()

@@ -3,15 +3,15 @@
     {
       "isEvent": "CambiarPersonaje",
       "img": 1,
-      "text": "Amarillo"
+      "text": "Nadia"
     },
     {
       "text": "¡WOOHOO, LO LOGRE!"
     },
     {
-      "isEvent": "CambiarPersonaje",
+      "isEvent": "Lucy",
       "img": 0,
-      "text": "Amarillo"
+      "text": "Nadia"
     },
     {
       "isEvent": "MostrarOpciones",

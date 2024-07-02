@@ -3,15 +3,15 @@
     {
       "isEvent": "CambiarPersonaje",
       "img": 7,
-      "text": "Cafecito"
+      "text": "Ryan"
     },
     {
       "text": "PARECE QUE SOY SUPERIOR A TI"
     },
     {
-      "isEvent": "CambiarPersonaje",
+      "isEvent": "Lucy",
       "img": 6,
-      "text": "Cafecito"
+      "text": "Ryan"
     },
     {
       "isEvent": "MostrarOpciones",

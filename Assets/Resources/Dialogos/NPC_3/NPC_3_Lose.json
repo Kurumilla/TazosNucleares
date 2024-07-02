@@ -3,7 +3,7 @@
     {
       "isEvent": "CambiarPersonaje",
       "img": 13,
-      "text": "Traje"
+      "text": "Danny"
     },
     {
       "text": "¿YA VISTE?"
@@ -12,9 +12,9 @@
       "text": "SOY EL MÁS FUERTE"
     },
     {
-      "isEvent": "CambiarPersonaje",
+      "isEvent": "Lucy",
       "img": 12,
-      "text": "Traje"
+      "text": "Danny"
     },
     {
       "isEvent": "MostrarOpciones",

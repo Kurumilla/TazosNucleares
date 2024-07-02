@@ -1,9 +1,9 @@
 ﻿{
   "Items": [
     {
-      "isEvent": "CambiarPersonaje",
+      "isEvent": "Lucy",
       "img": "NPC_BonitaConClase_03",
-      "text": "Clasista"
+      "text": "Jeremy"
     },
     {
       "text": "¿¡PERO CÓMO!?"

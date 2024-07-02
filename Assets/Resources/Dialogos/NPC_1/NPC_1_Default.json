@@ -3,7 +3,7 @@
     {
       "isEvent": "CambiarPersonaje",
       "img": 6,
-      "text": "Cafecito"
+      "text": "Ryan"
     },
     {
       "text": "A VER SI TIENES LA FUERZA PARA VENCERME"
@@ -14,7 +14,7 @@
         {
           "isEffect": "Play",
           "choiceText": "YA VEREMOS",
-          "answerText": "¡EMPEZEMOS!"
+          "answerText": "¡EMPECEMOS!"
         },
         {
           "choiceText": "NECESITO PREPARARME",

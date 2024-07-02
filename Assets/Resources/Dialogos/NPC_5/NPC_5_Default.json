@@ -1,9 +1,9 @@
 ﻿{
   "Items": [
     {
-      "isEvent": "CambiarPersonaje",
+      "isEvent": "Lucy",
       "img": 3,
-      "text": "Clasista"
+      "text": "Jeremy"
     },
     {
       "text": "LOS DE TU CLASE BAJA NO PUEDEN CONTRA MI"
@@ -18,7 +18,7 @@
         },
         {
           "choiceText": "CUANDO ESTE LISTO TE DEMOSTRARE",
-          "answerText": "VES, NI NECESITO VENCERTE PARA DEMOSTRAR LO DEBIL QUE ERES"
+          "answerText": "VES, NI NECESITO VENCERTE PARA DEMOSTRAR LO DÉBIL QUE ERES"
         }
       ]
     }

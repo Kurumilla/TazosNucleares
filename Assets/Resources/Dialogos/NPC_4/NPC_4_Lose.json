@@ -3,7 +3,7 @@
     {
       "isEvent": "CambiarPersonaje",
       "img": 10,
-      "text": "Chulada"
+      "text": "Fiona"
     },
     {
       "text": "¿EN SERIO?"
@@ -12,9 +12,9 @@
       "text": "NI PARECE QUE LO INTENTASTE"
     },
     {
-      "isEvent": "CambiarPersonaje",
+      "isEvent": "Lucy",
       "img": 9,
-      "text": "Chulada"
+      "text": "Fiona"
     },
     {
       "isEvent": "MostrarOpciones",

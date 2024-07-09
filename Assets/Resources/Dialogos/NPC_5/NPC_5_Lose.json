@@ -1,8 +1,8 @@
 ﻿{
   "Items": [
     {
-      "isEvent": "Lucy",
-      "img": "NPC_BonitaConClase_02",
+      "isEvent": "CambiarPersonaje",
+      "img": 13,
       "text": "Jeremy"
     },
     {
@@ -12,8 +12,8 @@
       "text": "NADIE PUEDE CONTRA MI CLASE"
     },
     {
-      "isEvent": "Lucy",
-      "img": "NPC_BonitaConClase_01",
+      "isEvent": "CambiarPersonaje",
+      "img": 12,
       "text": "Jeremy"
     },
     {

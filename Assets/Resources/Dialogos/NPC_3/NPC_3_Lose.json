@@ -2,7 +2,7 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": 13,
+      "img": 7,
       "text": "Danny"
     },
     {
@@ -13,7 +13,7 @@
     },
     {
       "isEvent": "Lucy",
-      "img": 12,
+      "img": 6,
       "text": "Danny"
     },
     {

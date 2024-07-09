@@ -1,8 +1,8 @@
 ﻿{
   "Items": [
     {
-      "isEvent": "Lucy",
-      "img": 3,
+      "isEvent": "CambiarPersonaje",
+      "img": 12,
       "text": "Jeremy"
     },
     {

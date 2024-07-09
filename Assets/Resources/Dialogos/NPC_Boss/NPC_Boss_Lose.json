@@ -1,0 +1,34 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 16,
+      "text": "Jefe"
+    },
+    {
+      "text": "¡¡MUAHAHAHA!!"
+    },
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 15,
+      "text": "Jefe"
+    },
+    {
+      "text": "Y CREÍAS QUE PODRÍAS DERROTAR AL REY, NIÑA"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "¡NO! NO ME RENDIRÉ, AÚN NO HAS VISTO LO QUE PUEDO HACER",
+          "answerText": "¿EN SERIO?, NO APRENDES NADA VERDAD, ¡NIÑA!"
+        },
+        {
+          "choiceText": "VOLVERÉ MÁS FUERTE QUE NUNCA PARA DERROTARTE",
+          "answerText": "¡¡HAHAHA, POR ESO SOY EL REY DE LOS GACHAPONES!!"
+        }
+      ]
+    }
+  ]
+}

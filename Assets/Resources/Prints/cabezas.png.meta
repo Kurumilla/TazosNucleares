@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 04144142fbd27ef468107f0f20c992e1
+guid: d2eb262f2eee47d40b4ebe3aff745d24
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
-    resizeAlgorithm: 1
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -82,6 +82,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -106,333 +119,320 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 4096
-    resizeAlgorithm: 1
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC_Ryan_01
+      name: npc1_head1
       rect:
         serializedVersion: 2
-        x: 51
-        y: 744
-        width: 125
-        height: 300
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 7
+        y: 857
+        width: 196
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64c98147351594242951b18215176f73
-      internalID: -2016577026
+      spriteID: e4293eaf51873a544b095cccce8aadfe
+      internalID: -866261125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Ryan_02
+      name: npc1_head2
       rect:
         serializedVersion: 2
-        x: 205
-        y: 750
-        width: 125
-        height: 300
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 220
+        y: 859
+        width: 195
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27d1e6b89730db249a034d22b14929e4
-      internalID: -2133774531
+      spriteID: 98aaeef0695d32a47b3cbee59552a8c1
+      internalID: -1054572119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Ryan_03
+      name: npc1_head3
       rect:
         serializedVersion: 2
-        x: 374
-        y: 754
-        width: 125
-        height: 300
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 430
+        y: 863
+        width: 195
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e0c6ec864bd4d740afd0082f91a73ac
-      internalID: 1146386537
+      spriteID: 784488933d948eb4494f0b449bfeea18
+      internalID: -342983179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Nadia_01
+      name: npc2_head1
       rect:
         serializedVersion: 2
-        x: 557
-        y: 755
-        width: 125
-        height: 300
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 649
+        y: 870
+        width: 183
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ed413c6f9748de408743279c8ab9806
-      internalID: 1285551905
+      spriteID: 320a3a864cded9045b9136d48d42b6cf
+      internalID: -737133134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Nadia_02
+      name: npc2_head2
       rect:
         serializedVersion: 2
-        x: 696
-        y: 751
-        width: 129
-        height: 300
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 870
+        y: 872
+        width: 183
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d2a81b2b0bf72b47817a192e2cdcdf5
-      internalID: -473452276
+      spriteID: 1f4fa23481d4d8845a6cc1638cdbc556
+      internalID: -1655580740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Nadia_03
+      name: npc2_head3
       rect:
         serializedVersion: 2
-        x: 839
-        y: 756
-        width: 125
-        height: 300
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d158386a0cc4e064590b1b7800ff4358
-      internalID: 613308976
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NPC_Danny_01
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 409
-        width: 125
-        height: 300
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0788d1cd6daf7cd4e86b62c12aece969
-      internalID: 2141998466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NPC_Danny_02
-      rect:
-        serializedVersion: 2
-        x: 190
-        y: 413
-        width: 125
-        height: 300
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 900673c1b58bc0b4eacf37f849d63e1e
-      internalID: -1514268276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NPC_Danny_03
-      rect:
-        serializedVersion: 2
-        x: 333
-        y: 433
+        x: 8
+        y: 576
         width: 205
-        height: 182
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a229e2724c6d6b4e8a0c83be9347055
-      internalID: 909358740
+      spriteID: 86f647e5553cfb24394b0a4768b265a2
+      internalID: -1806036764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Fiona_01
+      name: npc3_head1
       rect:
         serializedVersion: 2
-        x: 570
-        y: 419
-        width: 125
-        height: 300
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 213
+        y: 581
+        width: 217
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6984bf35b5c8c8d4bb00b878e54b250a
-      internalID: 1171875500
+      spriteID: 1f2eac97aae1caa40ad5f6ad5d256c85
+      internalID: 438597850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Fiona_02
+      name: npc3_head2
       rect:
         serializedVersion: 2
-        x: 707
-        y: 419
-        width: 125
-        height: 300
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 438
+        y: 581
+        width: 217
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fa22cc613ab17044af676576b0919a1
-      internalID: -902760157
+      spriteID: 8e4b10710d1425347bc7dd7493163e46
+      internalID: 1854725626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Fiona_03
+      name: npc3_head3
       rect:
         serializedVersion: 2
-        x: 832
-        y: 421
-        width: 125
-        height: 300
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 664
+        y: 589
+        width: 217
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18c6a8b8bc3a0094998d733b3ca707a9
-      internalID: 1160860392
+      spriteID: 5705a81ccb7c7bd40b3e1ccf57df288e
+      internalID: 1353536368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Jeremy_01
+      name: npc4_head1
       rect:
         serializedVersion: 2
-        x: 27
-        y: 58
-        width: 125
-        height: 300
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 897
+        y: 582
+        width: 181
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0428c39e12bb9b54f90f4d17cf1a457b
-      internalID: 1907858102
+      spriteID: 06fc46952a1dd7e45ac232f53d614f84
+      internalID: 1724880288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Jeremy_02
+      name: npc4_head2
       rect:
         serializedVersion: 2
-        x: 185
-        y: 59
-        width: 140
-        height: 300
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 11
+        y: 320
+        width: 182
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dde9537715a582d4b9c95b2f4ba04328
-      internalID: -823386365
+      spriteID: 67baba7ec95b2d44184ddb7403941fbb
+      internalID: 676027535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Jeremy_03
+      name: npc4_head3
       rect:
         serializedVersion: 2
-        x: 344
-        y: 63
-        width: 125
-        height: 300
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 228
+        y: 324
+        width: 181
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e460a670352e9694cb6a391373b35356
-      internalID: 959855118
+      spriteID: c6c026058c9d00242a5039ae557e6168
+      internalID: 1475030171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc5_head1
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 338
+        width: 174
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc2dcc60f3086649834c455df944e84
+      internalID: 1215897520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc5_head2
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 334
+        width: 174
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9db51cc9d176744bc1c504299854dd
+      internalID: -206738936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc5_head3
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 338
+        width: 175
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73562fbe5479ed04eb69a5155cd8cb50
+      internalID: -780165715
       vertices: []
       indices: 
       edges: []
@@ -440,7 +440,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 254514bf94f492241b4b259b7bf6aec1
+    spriteID: 1a3a777291abf0340a4676d7e5e99b9b
     internalID: 0
     vertices: []
     indices: 
@@ -448,21 +448,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NPC_Danny_01: 2141998466
-      NPC_Danny_02: -1514268276
-      NPC_Danny_03: 909358740
-      NPC_Fiona_01: 1171875500
-      NPC_Fiona_02: -902760157
-      NPC_Fiona_03: 1160860392
-      NPC_Jeremy_01: 1907858102
-      NPC_Jeremy_02: -823386365
-      NPC_Jeremy_03: 959855118
-      NPC_Nadia_01: 1285551905
-      NPC_Nadia_02: -473452276
-      NPC_Nadia_03: 613308976
-      NPC_Ryan_01: -2016577026
-      NPC_Ryan_02: -2133774531
-      NPC_Ryan_03: 1146386537
+      npc1_head1: -866261125
+      npc1_head2: -1054572119
+      npc1_head3: -342983179
+      npc2_head1: -737133134
+      npc2_head2: -1655580740
+      npc2_head3: -1806036764
+      npc3_head1: 438597850
+      npc3_head2: 1854725626
+      npc3_head3: 1353536368
+      npc4_head1: 1724880288
+      npc4_head2: 676027535
+      npc4_head3: 1475030171
+      npc5_head1: 1215897520
+      npc5_head2: -206738936
+      npc5_head3: -780165715
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

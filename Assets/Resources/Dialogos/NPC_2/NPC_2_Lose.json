@@ -2,15 +2,15 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": 1,
+      "img": 4,
       "text": "Nadia"
     },
     {
       "text": "¡WOOHOO, LO LOGRE!"
     },
     {
-      "isEvent": "Lucy",
-      "img": 0,
+      "isEvent": "CambiarPersonaje",
+      "img": 3,
       "text": "Nadia"
     },
     {

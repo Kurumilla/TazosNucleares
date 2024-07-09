@@ -1,0 +1,29 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 15,
+      "text": "Jefe"
+    },
+    {
+      "text": "VAYA VAYA, ME IMPRESIONA QUE HAYAS LLEGADO TAN LEJOS SOLO PARA ENFRENTARME"
+    },
+    {
+      "text": "PERO ESO ACABÓ HOY NIÑITA."
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "SI, SE ACABARÁ CUANDO TE DERROTE",
+          "answerText": "HAHAHA, PERO QUE NIÑA ASTUTA ERES, ¡¡PREPÁRATE PARA QUE TE DEMOLE CON MI FUERZA!!"
+        },
+        {
+          "choiceText": "NO, AUN NO",
+          "answerText": "Y YO PENSANDO QUE YA ESTABAS PREPARADA PARA DESAFIARME, QUE PENA."
+        }
+      ]
+    }
+  ]
+}

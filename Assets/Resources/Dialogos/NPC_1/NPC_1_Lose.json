@@ -2,15 +2,15 @@
   "Items": [
     {
       "isEvent": "CambiarPersonaje",
-      "img": 7,
+      "img": 1,
       "text": "Ryan"
     },
     {
       "text": "PARECE QUE SOY SUPERIOR A TI"
     },
     {
-      "isEvent": "Lucy",
-      "img": 6,
+      "isEvent": "CambiarPersonaje",
+      "img": 0,
       "text": "Ryan"
     },
     {

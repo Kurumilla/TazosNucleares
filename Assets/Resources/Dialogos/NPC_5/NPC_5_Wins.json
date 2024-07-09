@@ -1,8 +1,8 @@
 ﻿{
   "Items": [
     {
-      "isEvent": "Lucy",
-      "img": "NPC_BonitaConClase_03",
+      "isEvent": "CambiarPersonaje",
+      "img": 14,
       "text": "Jeremy"
     },
     {

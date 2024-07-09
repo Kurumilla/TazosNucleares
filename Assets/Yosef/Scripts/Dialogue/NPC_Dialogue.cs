@@ -20,7 +20,7 @@ public class NPC_Dialogue : MonoBehaviour
         status = GameObject.Find("Estado de Juego").GetComponent<EstadoDeJuego>().npc[id];
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (active)
         {
@@ -47,6 +47,27 @@ public class NPC_Dialogue : MonoBehaviour
                             break;
                     }
                 }
+            }
+        }
+    }*/
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.CompareTag("Player"))
+        {
+            active = false;
+            manager.currentNPC = this;
+            switch (status)
+            {
+                case NPC_Status.Default:
+                    manager.StartNewDialogue(dialogueDefault);
+                    break;
+                case NPC_Status.PlayerWins:
+                    manager.StartNewDialogue(dialoguePlayerWins);
+                    break;
+                case NPC_Status.PlayerLose:
+                    manager.StartNewDialogue(dialoguePlayerLose);
+                    break;
             }
         }
     }

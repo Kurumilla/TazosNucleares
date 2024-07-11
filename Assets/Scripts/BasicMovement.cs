@@ -7,6 +7,7 @@ public class BasicMovement : MonoBehaviour
     public float moveSpeed = 5f; 
     public Animator animator; 
     public Transform modelTransform;
+    public EstadoDeJuego estadoDeJuego;
 
     private Rigidbody rb; 
     private bool isMoving = false;
@@ -15,12 +16,13 @@ public class BasicMovement : MonoBehaviour
 
     void Start()
     {
+        estadoDeJuego = GameObject.Find("Estado de Juego").GetComponent<EstadoDeJuego>();
         rb = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
-        if (activado)
+        if (activado && !estadoDeJuego.movimientoBloqueado)
         {
             // Obtener las entradas de movimiento del eje horizontal y vertical
             float moveInputX = Input.GetAxisRaw("Horizontal");

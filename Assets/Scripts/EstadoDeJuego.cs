@@ -15,6 +15,8 @@ public class EstadoDeJuego : MonoBehaviour
 {
     [Header("Para lo de Kurumilla:")]
     public Vector3 playerPos;
+    public bool textoImportante = false;
+    public bool movimientoBloqueado = false;
     [Header("Para Miguel y Omar:")]
     public int personaje;
     [Header("Para lo de Yosef:")]

@@ -163,7 +163,6 @@ MonoBehaviour:
   id: 4
   status: 0
   range: 1
-  boxCollider: {fileID: 0}
 --- !u!65 &36731981
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -416,6 +415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPos: {x: 0, y: 0, z: 0}
+  textoImportante: 0
   personaje: 0
   npc: 0000000000000000000000000000000000000000
 --- !u!4 &311645382
@@ -1373,7 +1373,6 @@ MonoBehaviour:
   id: 1
   status: 0
   range: 1
-  boxCollider: {fileID: 0}
 --- !u!65 &683381253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2268,7 +2267,6 @@ MonoBehaviour:
   id: 0
   status: 0
   range: 1
-  boxCollider: {fileID: 0}
 --- !u!4 &990063814
 Transform:
   m_ObjectHideFlags: 0
@@ -2429,7 +2427,7 @@ Transform:
   m_GameObject: {fileID: 1118523516}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.035, y: 0.5020621, z: 7.6}
+  m_LocalPosition: {x: -29.035, y: 0.5020621, z: 6.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2460,6 +2458,8 @@ MonoBehaviour:
     las diferencia.
   textoTip: {fileID: 1316696608}
   boxCollider: {fileID: 1118523517}
+  estadoDeJuego: {fileID: 0}
+  activarIniciando: 0
 --- !u!1001 &1264417802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2802,7 +2802,6 @@ MonoBehaviour:
   id: 4
   status: 0
   range: 1
-  boxCollider: {fileID: 0}
 --- !u!65 &1365182049
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3964,7 +3963,6 @@ MonoBehaviour:
   id: 2
   status: 0
   range: 1
-  boxCollider: {fileID: 0}
 --- !u!65 &1868462538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4226,6 +4224,8 @@ MonoBehaviour:
     las diferencia.
   textoTip: {fileID: 1316696608}
   boxCollider: {fileID: 1118523517}
+  estadoDeJuego: {fileID: 0}
+  activarIniciando: 1
 --- !u!1001 &2145811761
 PrefabInstance:
   m_ObjectHideFlags: 0

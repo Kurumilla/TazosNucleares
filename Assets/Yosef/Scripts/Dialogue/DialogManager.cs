@@ -79,6 +79,7 @@ public class DialogManager : MonoBehaviour
         active = true;
         dialogBox.gameObject.SetActive(true);
         player.activado = false;
+        gameState.textoImportante = true;
         DialogEvent();
     }
 
@@ -95,6 +96,7 @@ public class DialogManager : MonoBehaviour
             active = false;
             player.activado = true;
             dialogBox.gameObject.SetActive(false);
+            gameState.textoImportante = false;
             //Reactivar al NPC con delay
             StartCoroutine(ReactivateNPC());
         }

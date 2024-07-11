@@ -6,7 +6,9 @@ public class Tazo : MonoBehaviour
 {
     Rigidbody rb;
     RoundOver gg;
+    AudioSource audio;
 
+    [Header("Variables generales")]
     public float velocidad = 1f;
     public float fuerzaTiro = 1f;
     [Header("Variables del Tiro Curvo")]
@@ -23,6 +25,7 @@ public class Tazo : MonoBehaviour
         velocidad /= 2f;
         rb = GetComponent<Rigidbody>();
         gg = GameObject.Find("Scripts Manager").GetComponent<RoundOver>();
+        audio = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -44,16 +47,18 @@ public class Tazo : MonoBehaviour
     {
         if (col.gameObject.tag != "Ignore")
         {
+            audio.Play();
             //Reset countdown because tazos are still bouncing around
             if (gg.countdown < 2.5f)
                 gg.countdown = 2.5f;
-            // Check if other is tazo or floor
+            // When hitting a tazo
             Tazo other = col.gameObject.GetComponent<Tazo>();
             if (activo && other != null)
             {
                 Vector3 knockback = Vector3.up;
                 // Apply impulse
                 other.rb.AddForce(knockback * 2.0f, ForceMode.Impulse);
+                other.audio.Play();
             }
             // Becomes part of the field
             GetComponent<MeshCollider>().isTrigger = false;
@@ -63,8 +68,9 @@ public class Tazo : MonoBehaviour
         }
     }
     
-    private void OnColliderEnter()
+    private void OnCollisionEnter(Collision other)
     {
+        audio.Play();
         //Reset countdown because tazos are still bouncing around
         if (gg.countdown < 2.5f)
             gg.countdown = 2.5f;

@@ -16,8 +16,8 @@ public class MapaManager : MonoBehaviour
     {
         for (int i=0; i<npc.Length; i++)
         {
-            float x = mapa.rect.x * npc[i].position.x / 50f;
-            float y = mapa.rect.y * npc[i].position.z / 50f;
+            float x = mapa.rect.x * npc[i].position.x / 52.5f;
+            float y = mapa.rect.y * npc[i].position.z / 52.5f;
             npcIcon[i].anchoredPosition = new Vector2(-x, -y);
         }
     }
@@ -31,8 +31,8 @@ public class MapaManager : MonoBehaviour
         if (panel.active)
         {
             Vector3 pos = GameObject.FindWithTag("Player").transform.position;
-            float x = mapa.rect.x * pos.x / 50f;
-            float y = mapa.rect.y * pos.z / 50f;
+            float x = mapa.rect.x * pos.x / 52.5f;
+            float y = mapa.rect.y * pos.z / 52.5f;
             icon.anchoredPosition = new Vector2(-x, -y);
         }
     }

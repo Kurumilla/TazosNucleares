@@ -81,7 +81,7 @@ public class CameraManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         //Presentar al jugador
-        target = GameObject.Find("Player").transform;
+        target = GameObject.Find("PlayerHolder").transform;
         _mode = Mode.Focus;
         yield return new WaitForSeconds(2f);
         //Return

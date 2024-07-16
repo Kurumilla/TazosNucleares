@@ -17,7 +17,7 @@ public class MenuController : MonoBehaviour
 
     public void _newGame()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("WorldMap");
     }
 
     public void _loadingGame(int index)
@@ -25,7 +25,7 @@ public class MenuController : MonoBehaviour
         switch (index)
         {
             default:
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene("WorldMap");
                 break;
         }
     }

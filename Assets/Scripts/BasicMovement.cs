@@ -52,7 +52,7 @@ public class BasicMovement : MonoBehaviour
                 if (!isMoving)
                 {
                     audio.Play();
-                    animator.SetBool("movimiento", true);
+                    animator.SetBool("isWalking", true);
                     isMoving = true;
                 }
             }
@@ -62,7 +62,7 @@ public class BasicMovement : MonoBehaviour
                 if (isMoving)
                 {
                     audio.Stop();
-                    animator.SetBool("movimiento", false);
+                    animator.SetBool("isWalking", false);
                     isMoving = false;
                 }
             }

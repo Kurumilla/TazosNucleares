@@ -24,7 +24,7 @@ public class MapaManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.M))
         {
             panel.SetActive(true);
         }

@@ -499,6 +499,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d61e7f21314b29f45a5f9435a0424342, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3f1cf0825d77b3f4a959090e2e66173b, type: 2}
     - target: {fileID: 919132149155446097, guid: d61e7f21314b29f45a5f9435a0424342, type: 3}
       propertyPath: m_Name
       value: WorldMap_StreetLamps
@@ -670,6 +674,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 13035bca15f26244290ed7a081a58553, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c2298d676edaf6a4683436c2a6377b60, type: 2}
     - target: {fileID: 919132149155446097, guid: 13035bca15f26244290ed7a081a58553, type: 3}
       propertyPath: m_Name
       value: WorldMap_Trees
@@ -966,6 +974,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7972f7a215d390d4db42a7076fc352fa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ba887d14d66f6eb4bb709fa8a2ab5288, type: 2}
     - target: {fileID: 919132149155446097, guid: 7972f7a215d390d4db42a7076fc352fa, type: 3}
       propertyPath: m_Name
       value: WorldMap_Towers_1
@@ -1897,6 +1909,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 99429fd59da4d4946bb36521ce50742d, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8be5fa7a59617dc4fa23a74c39c34516, type: 2}
     - target: {fileID: 919132149155446097, guid: 99429fd59da4d4946bb36521ce50742d, type: 3}
       propertyPath: m_Name
       value: WorldMap_Wall
@@ -1989,6 +2005,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 32ca1682a01ff7b4c97d6615f20c4b85, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b402d31bd3000e041bec6c07810d02dd, type: 2}
     - target: {fileID: 919132149155446097, guid: 32ca1682a01ff7b4c97d6615f20c4b85, type: 3}
       propertyPath: m_Name
       value: Worldmap_ParkEntrance
@@ -2551,6 +2571,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f3236d3950f66504ea66b2192d6cc929, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee2abdfb929f4974486b97ce043ab398, type: 2}
     - target: {fileID: 919132149155446097, guid: f3236d3950f66504ea66b2192d6cc929, type: 3}
       propertyPath: m_Name
       value: WorldMap_Greehouse
@@ -3152,6 +3176,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 550b3a6c7c6eaa945a9fed0e848785d1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 74b41bda1642b9f4b8d84de32c8ea0cb, type: 2}
     - target: {fileID: 919132149155446097, guid: 550b3a6c7c6eaa945a9fed0e848785d1, type: 3}
       propertyPath: m_Name
       value: WorldMap_Parkbench
@@ -3746,6 +3774,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5fd8fbb85331dbd42acdafe74b601b88, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 092a4fc94f692fb4b8128d9641f32960, type: 2}
     - target: {fileID: 919132149155446097, guid: 5fd8fbb85331dbd42acdafe74b601b88, type: 3}
       propertyPath: m_Name
       value: WorldMap_Mansion
@@ -4233,6 +4265,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: bba519521fa689a45b50e57082a5cf8f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e585524af3a305441acb4e67d235b0aa, type: 2}
+    - target: {fileID: -7511558181221131132, guid: bba519521fa689a45b50e57082a5cf8f, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 54f37653e675adc4387a560d9e696ce8, type: 2}
     - target: {fileID: 919132149155446097, guid: bba519521fa689a45b50e57082a5cf8f, type: 3}
       propertyPath: m_Name
       value: Worldmap_Towers2
@@ -4795,6 +4835,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97b2a3a95748ce54592ded479c470c41, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3d6c8635801f2b946a797219288e7119, type: 2}
     - target: {fileID: 919132149155446097, guid: 97b2a3a95748ce54592ded479c470c41, type: 3}
       propertyPath: m_Name
       value: Worldmap_Fountain
@@ -5000,6 +5044,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 288a86fe22f3bb546b5f742eecb7a3af, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 55e5f961f08955647a5e6b74a9dab2f7, type: 2}
     - target: {fileID: 919132149155446097, guid: 288a86fe22f3bb546b5f742eecb7a3af, type: 3}
       propertyPath: m_Name
       value: WorldMap_WallCorner

@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b75bf26a2bb5df4c85fd98436020a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerWins: 0
+  spriteOffset: 1
 --- !u!114 &215063258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -827,7 +827,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 112.9
+  m_fontSize: 112.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

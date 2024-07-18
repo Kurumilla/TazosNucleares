@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class GameOver_Sprite : MonoBehaviour
 {
-    public bool _playerWins;
+    [Header("0=Default, 1=Happy, 2=Sad")]
+    public int spriteOffset;
 
     void Start()
     {
         Sprite[] spritesheet = Resources.LoadAll<Sprite>("Prints/npc_humano_sprites");
         EstadoDeJuego status = GameObject.Find("Estado de Juego").GetComponent<EstadoDeJuego>();
-        int id = _playerWins ? 2 : 1;
-        id += status.personaje * 3;
+        int id = status.personaje * 3 + spriteOffset;
         GetComponent<Image>().sprite = spritesheet[id];
     }
 }

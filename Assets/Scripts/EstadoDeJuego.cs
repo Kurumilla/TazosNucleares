@@ -8,7 +8,7 @@ public enum NPC_Status
 {
     Default,        //Aun no has interactuado con este
     PlayerWins,     //"Me ganaste jaja"
-    PlayerLose      //"¿Quieres intentar otra vez?"
+    PlayerLose      //"ï¿½Quieres intentar otra vez?"
 }
 
 public class EstadoDeJuego : MonoBehaviour
@@ -35,6 +35,9 @@ public class EstadoDeJuego : MonoBehaviour
     public void GameOver(bool _playerWins)
     {
         npc[personaje] = _playerWins ? NPC_Status.PlayerWins : NPC_Status.PlayerLose;
-        SceneManager.LoadScene("WorldMap");
+        if (_playerWins)
+            SceneManager.LoadScene("GameOverWin");
+        else
+            SceneManager.LoadScene("GameOverLose");
     }
 }

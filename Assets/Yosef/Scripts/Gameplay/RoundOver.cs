@@ -58,7 +58,7 @@ public class RoundOver : MonoBehaviour
             else if (tazos.Count > 0)
                 EnemyPhase();
             else
-                GameOver();
+                StartCoroutine(GameOver());
         }
         else if (active)
         {
@@ -78,6 +78,7 @@ public class RoundOver : MonoBehaviour
         // Spawn tazo at player's hand
         current = (GameObject)Instantiate(tazos[0], camera);
         current.transform.localPosition = new Vector3(0, -0.2f, 0.5f);
+        // Show tiro UI
     }
 
     public void EnemyPhase()
@@ -99,8 +100,9 @@ public class RoundOver : MonoBehaviour
         tazos.RemoveAt(0); //Enemy removes because they go 2nd
     }
 
-    private void GameOver()
+    IEnumerator GameOver()
     {
+        yield return new WaitForSeconds(3.0f);
         GameObject.Find("Estado de Juego").GetComponent<EstadoDeJuego>().GameOver(score[0] > score[1]);
     }
 

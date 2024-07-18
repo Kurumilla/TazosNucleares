@@ -56,16 +56,18 @@ public class BasicMovement : MonoBehaviour
                     isMoving = true;
                 }
             }
-            else
+            else if (isMoving)
             {
-                // Desactivar la variable bool en el Animator
-                if (isMoving)
-                {
-                    audio.Stop();
-                    animator.SetBool("isWalking", false);
-                    isMoving = false;
-                }
+                audio.Stop();
+                animator.SetBool("isWalking", false);
+                isMoving = false;
             }
+        }
+        else if (isMoving)
+        {
+            audio.Stop();
+            animator.SetBool("isWalking", false);
+            isMoving = false;
         }
     }
 }

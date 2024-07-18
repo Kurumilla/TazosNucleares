@@ -604,7 +604,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.4
+  m_fontSize: 27.05
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1471,7 +1471,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.65
+  m_fontSize: 24.5
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1644,14 +1644,6 @@ MonoBehaviour:
   tazos:
   - {fileID: 6791479269036590220, guid: 4b702fcf31c5473459909f4f3eca6459, type: 3}
   - {fileID: 6791479269036590220, guid: c58a87ca402429d43b885607eab90e31, type: 3}
-  - {fileID: 6791479269036590220, guid: a488ab1c24ce57c4895c401a8ecc27ea, type: 3}
-  - {fileID: 6791479269036590220, guid: 4866e5d1ef4986046af79e4076827e43, type: 3}
-  - {fileID: 6791479269036590220, guid: 880f1aa04446b3944ab46f5392537dbc, type: 3}
-  - {fileID: 6791479269036590220, guid: bb77592809ca1f9488fb637a087af356, type: 3}
-  - {fileID: 6791479269036590220, guid: 71931218055cc234a9d5270c754e5bf9, type: 3}
-  - {fileID: 6791479269036590220, guid: 1518021f2bdb9614ea4c3cb9db3520ac, type: 3}
-  - {fileID: 6791479269036590220, guid: aeee3b6286fd61e4f98167335470f734, type: 3}
-  - {fileID: 6791479269036590220, guid: 06ba48d15ae48dd4b98ee071c321ac1d, type: 3}
   camera: {fileID: 901001517}
   scoreboard: {fileID: 2028406980}
   txtHeadsCounter: {fileID: 1228089674}
@@ -1755,7 +1747,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 156.95
+  m_fontSize: 147.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2044,7 +2036,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 156.95
+  m_fontSize: 147.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

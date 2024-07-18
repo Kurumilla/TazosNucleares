@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC_Ryan_01
+      name: NPC 1-1
       rect:
         serializedVersion: 2
         x: 51
@@ -144,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Ryan_02
+      name: NPC 1-2
       rect:
         serializedVersion: 2
         x: 205
@@ -165,11 +165,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Ryan_03
+      name: NPC 1-3
       rect:
         serializedVersion: 2
         x: 374
-        y: 754
+        y: 755
         width: 125
         height: 300
       alignment: 7
@@ -186,7 +186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Nadia_01
+      name: NPC 2-1
       rect:
         serializedVersion: 2
         x: 557
@@ -207,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Nadia_02
+      name: NPC 2-2
       rect:
         serializedVersion: 2
         x: 696
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Nadia_03
+      name: NPC 2-3
       rect:
         serializedVersion: 2
         x: 839
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Danny_01
+      name: NPC 3-1
       rect:
         serializedVersion: 2
         x: 40
@@ -270,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Danny_02
+      name: NPC 3-2
       rect:
         serializedVersion: 2
         x: 190
@@ -291,13 +291,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Danny_03
+      name: NPC 3-3
       rect:
         serializedVersion: 2
         x: 333
-        y: 433
+        y: 304
         width: 205
-        height: 182
+        height: 450
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,11 +312,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Fiona_01
+      name: NPC 4-1
       rect:
         serializedVersion: 2
         x: 570
-        y: 419
+        y: 422
         width: 125
         height: 300
       alignment: 7
@@ -333,11 +333,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Fiona_02
+      name: NPC 4-2
       rect:
         serializedVersion: 2
         x: 707
-        y: 419
+        y: 420
         width: 125
         height: 300
       alignment: 7
@@ -354,11 +354,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Fiona_03
+      name: NPC 4-3
       rect:
         serializedVersion: 2
         x: 832
-        y: 421
+        y: 351
         width: 125
         height: 300
       alignment: 7
@@ -375,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Jeremy_01
+      name: NPC 5-1
       rect:
         serializedVersion: 2
         x: 27
@@ -396,7 +396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Jeremy_02
+      name: NPC 5-2
       rect:
         serializedVersion: 2
         x: 185
@@ -417,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_Jeremy_03
+      name: NPC 5-3
       rect:
         serializedVersion: 2
         x: 344
@@ -448,21 +448,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NPC_Danny_01: 2141998466
-      NPC_Danny_02: -1514268276
-      NPC_Danny_03: 909358740
-      NPC_Fiona_01: 1171875500
-      NPC_Fiona_02: -902760157
-      NPC_Fiona_03: 1160860392
-      NPC_Jeremy_01: 1907858102
-      NPC_Jeremy_02: -823386365
-      NPC_Jeremy_03: 959855118
-      NPC_Nadia_01: 1285551905
-      NPC_Nadia_02: -473452276
-      NPC_Nadia_03: 613308976
-      NPC_Ryan_01: -2016577026
-      NPC_Ryan_02: -2133774531
-      NPC_Ryan_03: 1146386537
+      NPC 1-1: -2016577026
+      NPC 1-2: -2133774531
+      NPC 1-3: 1146386537
+      NPC 2-1: 1285551905
+      NPC 2-2: -473452276
+      NPC 2-3: 613308976
+      NPC 3-1: 2141998466
+      NPC 3-2: -1514268276
+      NPC 3-3: 909358740
+      NPC 4-1: 1171875500
+      NPC 4-2: -902760157
+      NPC 4-3: 1160860392
+      NPC 5-1: 1907858102
+      NPC 5-2: -823386365
+      NPC 5-3: 959855118
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

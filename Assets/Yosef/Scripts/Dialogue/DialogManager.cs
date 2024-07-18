@@ -50,11 +50,12 @@ public class DialogManager : MonoBehaviour
     {
         spritesheet = Resources.LoadAll<Sprite>("Prints/npc_humano_sprites");
         gameState = GameObject.Find("Estado de Juego").GetComponent<EstadoDeJuego>();
-        // La narración se activa si es tu primera vez aqui
+        // La narraciï¿½n se activa si es tu primera vez aqui
         if (gameState.playerPos == Vector3.zero)
             StartNewDialogue(initialJson);
         else
             player.gameObject.transform.position = gameState.playerPos;
+        Debug.Log(player.gameObject.transform.position);
     }
 
     void Update()
@@ -77,9 +78,9 @@ public class DialogManager : MonoBehaviour
         // Escribir el primer dialogo
         n = 0;
         active = true;
-        dialogBox.gameObject.SetActive(true);
         player.activado = false;
-        gameState.textoImportante = true;
+        gameState.personaje = currentNPC.id;
+        dialogBox.gameObject.SetActive(true);
         DialogEvent();
     }
 
@@ -126,7 +127,7 @@ public class DialogManager : MonoBehaviour
                     choices[i].GetComponentInChildren<TextMeshProUGUI>().text = response[n].options[i].choiceText;
                 }
                 break;
-            default:                    //Diálogo simple
+            default:                    //Diï¿½logo simple
                 dialogBox.NewOutput(response[n].text);
                 break;
         }
@@ -147,8 +148,14 @@ public class DialogManager : MonoBehaviour
             case "Play":
                 gameState.personaje = currentNPC.id;
                 gameState.playerPos = player.gameObject.transform.position;
-                SceneManager.LoadScene("GameTest");
+                StartCoroutine(Play());
                 break;
         }
+    }
+
+    IEnumerator Play()
+    {
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene("GameTest");
     }
 }

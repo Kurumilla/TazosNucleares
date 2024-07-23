@@ -8,7 +8,7 @@ public enum NPC_Status
 {
     Default,        //Aun no has interactuado con este
     PlayerWins,     //"Me ganaste jaja"
-    PlayerLose      //"�Quieres intentar otra vez?"
+    PlayerLose      //"Quieres intentar otra vez?"
 }
 
 public class EstadoDeJuego : MonoBehaviour

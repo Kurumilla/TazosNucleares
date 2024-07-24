@@ -80,6 +80,7 @@ public class DialogManager : MonoBehaviour
         active = true;
         player.activado = false;
         gameState.personaje = currentNPC.id;
+        gameState.textoImportante = true;
         dialogBox.gameObject.SetActive(true);
         DialogEvent();
     }

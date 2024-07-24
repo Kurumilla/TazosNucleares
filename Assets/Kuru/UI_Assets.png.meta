@@ -466,6 +466,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Textbox
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 0
+        width: 1745
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487d223989e518240989d09988098693
+      internalID: -1221425356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -487,6 +508,7 @@ TextureImporter:
       Fondo_Slider: -1612984098
       Slot_Partida: 475249758
       Teclado: -2094933566
+      Textbox: -1221425356
       Titulo: 540149921
       UI_Assets_0: 984511796
       UI_Assets_6: 321316970

@@ -25,6 +25,7 @@ public class RoundOver : MonoBehaviour
     public UI_Shrink scoreboard;
     public TMP_Text txtHeadsCounter;
     public TMP_Text txtTailsCounter;
+    public GameObject btnTiro;
 
     void Awake()
     {
@@ -77,8 +78,10 @@ public class RoundOver : MonoBehaviour
     {
         // Spawn tazo at player's hand
         current = (GameObject)Instantiate(tazos[0], camera);
+        current.GetComponent<Tazos_Material>().Setup(4);
         current.transform.localPosition = new Vector3(0, -0.2f, 0.5f);
         // Show tiro UI
+        btnTiro.SetActive(true);
     }
 
     public void EnemyPhase()
@@ -96,6 +99,7 @@ public class RoundOver : MonoBehaviour
 
         // Spawn tazo above the target
         GameObject token = (GameObject)Instantiate(tazos[0], pos, Quaternion.Euler(rot));
+        token.GetComponent<Tazos_Material>().Setup(5);
         token.GetComponent<Tazo>().OnClick();
         tazos.RemoveAt(0); //Enemy removes because they go 2nd
     }

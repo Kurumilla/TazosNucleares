@@ -10,9 +10,17 @@ public class GameOver_Sprite : MonoBehaviour
 
     void Start()
     {
-        Sprite[] spritesheet = Resources.LoadAll<Sprite>("Prints/npc_humano_sprites");
         EstadoDeJuego status = GameObject.Find("Estado de Juego").GetComponent<EstadoDeJuego>();
-        int id = status.personaje * 3 + spriteOffset;
-        GetComponent<Image>().sprite = spritesheet[id];
+        if (status.personaje == 5) //Jefe
+        {
+            transform.localScale /= 2;
+            GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Prints/Jefe");
+        }
+        else
+        {
+            Sprite[] spritesheet = Resources.LoadAll<Sprite>("Prints/npc_humano_sprites");
+            int id = status.personaje * 3 + spriteOffset;
+            GetComponent<SpriteRenderer>().sprite = spritesheet[id];
+        }
     }
 }

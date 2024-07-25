@@ -106,17 +106,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI_TiroRecto
+      name: UI-Buttons-Marco
       rect:
         serializedVersion: 2
-        x: 438
-        y: 59
-        width: 259
-        height: 277
+        x: 0
+        y: 0
+        width: 394
+        height: 394
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6edd9c7ef2c039f4d9a4f73e18a5e5f8
-      internalID: 841832657
+      spriteID: 1e5ef913b2633a14fa960a504fdb8458
+      internalID: 1668994393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_TiroCurvo
+      name: UI-Tiro-Recto
       rect:
         serializedVersion: 2
-        x: 727
-        y: 54
-        width: 312
-        height: 315
+        x: 431
+        y: 60
+        width: 275
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +158,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac7f67aa2817edb4399e5431c533cfa5
-      internalID: -1205328661
+      spriteID: d97f5a63424192b42acd711100f3ec14
+      internalID: -166200993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI-Tiro-Curvo
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 55
+        width: 314
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431f35c992aff49489d1fb62b5122831
+      internalID: -1391672666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI-Camara-H
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 36
+        width: 324
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facbb7d51fb7f644ea03cc82ca3cc4a6
+      internalID: 1738095192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI-Camara-V
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 36
+        width: 324
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6744abe22d833428d110f464c93624
+      internalID: -742155640
       vertices: []
       indices: 
       edges: []
@@ -162,8 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UI_TiroCurvo: -1205328661
-      UI_TiroRecto: 841832657
+      UI-Buttons-Marco: 1668994393
+      UI-Camara-H: 1738095192
+      UI-Camara-V: -742155640
+      UI-Tiro-Curvo: -1391672666
+      UI-Tiro-Recto: -166200993
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

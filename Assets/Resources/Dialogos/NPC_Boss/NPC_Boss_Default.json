@@ -1,7 +1,7 @@
 ﻿{
   "Items": [
     {
-      "isEvent": "CambiarPersonaje",
+      "isEvent": "CambiarImagen",
       "img": 15,
       "text": "Jefe"
     },

@@ -1,7 +1,7 @@
 ﻿{
   "Items": [
     {
-      "isEvent": "CambiarPersonaje",
+      "isEvent": "CambiarImagen",
       "img": 17,
       "text": "Jefe"
     },
@@ -10,6 +10,20 @@
     },
     {
       "text": "¿¡CÓMO PUDE HABER SIDO DERROTADO POR UNA SIMPLE NIÑA!?"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "GameOver",
+          "choiceText": "AHORA YO SOY LA JEFA DE ESTE LUGAR",
+          "answerText": "..."
+        },
+        {
+          "choiceText": "AL RATO NOS VEMOS",
+          "answerText": "..."
+        }
+      ]
     }
   ]
 }

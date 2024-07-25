@@ -114,8 +114,13 @@ public class DialogManager : MonoBehaviour
     {
         switch (response[n].isEvent)
         {
-            case "CambiarPersonaje":    //Cambiar la imagen
+            case "CambiarPersonaje":    //Cambiar la imagen usando el spritesheet
                 characterImg.sprite = spritesheet[response[n].img];
+                characterName.text = response[n].text;
+                NextDialog();
+                break;
+            case "CambiarImagen":       //Cambiar la imagen usando sprites
+                characterImg.sprite = Resources.Load<Sprite>("Prints/"+response[n].text);
                 characterName.text = response[n].text;
                 NextDialog();
                 break;
@@ -149,14 +154,17 @@ public class DialogManager : MonoBehaviour
             case "Play":
                 gameState.personaje = currentNPC.id;
                 gameState.playerPos = player.gameObject.transform.position;
-                StartCoroutine(Play());
+                StartCoroutine(DelayedChange("GameTest"));
+                break;
+            case "GameOver":
+                StartCoroutine(DelayedChange("Final"));
                 break;
         }
     }
 
-    IEnumerator Play()
+    IEnumerator DelayedChange(string _scene)
     {
         yield return new WaitForSeconds(1.0f);
-        SceneManager.LoadScene("GameTest");
+        SceneManager.LoadScene(_scene);
     }
 }

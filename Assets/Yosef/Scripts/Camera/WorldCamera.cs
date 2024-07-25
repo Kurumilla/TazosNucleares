@@ -36,7 +36,7 @@ public class WorldCamera : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.parent.position, pos, out hit, distance))
         {
-            if (hit.transform.gameObject.tag != "Player")
+            if (hit.transform.gameObject.tag!="Player" && hit.transform.gameObject.tag!="Enemy")
             {
                 return AreYouSure();
             }

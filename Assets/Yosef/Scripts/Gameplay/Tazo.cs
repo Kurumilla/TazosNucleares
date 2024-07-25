@@ -91,6 +91,8 @@ public class Tazo : MonoBehaviour
             enMano = false;
             // Start Count
             gg.SystemPhase();
+            GameObject btn = GameObject.Find("btnTiro");
+            if (btn) btn.SetActive(false);
         }
     }
 

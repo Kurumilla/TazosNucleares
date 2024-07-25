@@ -26,7 +26,7 @@ public class MapaManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.M))
         {
-            panel.SetActive(true);
+            OpenMap();
         }
         if (panel.active)
         {
@@ -35,6 +35,11 @@ public class MapaManager : MonoBehaviour
             float y = mapa.rect.y * pos.z / 57.5f;
             icon.anchoredPosition = new Vector2(-x, -y);
         }
+    }
+
+    public void OpenMap()
+    {
+        panel.SetActive(true);
     }
 
     public void CloseMap()

@@ -9,7 +9,7 @@ public class UI_ButtonSprites : MonoBehaviour
     private bool firstSprite = true;
     private Image render;
 
-    private void Start()
+    private void Awake()
     {
         render = GetComponent<Image>();
     }

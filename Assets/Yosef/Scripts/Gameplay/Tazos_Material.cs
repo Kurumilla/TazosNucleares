@@ -17,7 +17,7 @@ public class Tazos_Material : MonoBehaviour
     public void Setup(int _id)
     {
         string filename = "Tazo_" + (_id * tipo);
-        Debug.Log(filename);
+        //Debug.Log(filename);
         GetComponent<MeshRenderer>().material.mainTexture = Resources.Load<Texture>("Texturas/Tazos/" + filename);
     }
 }

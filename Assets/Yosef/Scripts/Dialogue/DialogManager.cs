@@ -165,6 +165,7 @@ public class DialogManager : MonoBehaviour
     IEnumerator DelayedChange(string _scene)
     {
         yield return new WaitForSeconds(1.0f);
+        gameState.textoImportante = false;
         SceneManager.LoadScene(_scene);
     }
 }

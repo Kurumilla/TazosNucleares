@@ -1,0 +1,34 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 13,
+      "text": "Jeremy"
+    },
+    {
+      "text": "¿YA VES?"
+    },
+    {
+      "text": "NADIE PUEDE CONTRA MI CLASE"
+    },
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 12,
+      "text": "Jeremy"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "AUN NO ME DOY POR VENCIDO",
+          "answerText": "ESTÁ BIEN, DE TODOS MODOS TENGO LA VICTORIA ASEGURADA"
+        },
+        {
+          "choiceText": "REGRESARÉ PARA LA REVANCHA",
+          "answerText": "NO VALE LA PENA, ES UNA PÉRDIDA DE TIEMPO"
+        }
+      ]
+    }
+  ]
+}

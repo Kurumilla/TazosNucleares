@@ -1,0 +1,15 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 14,
+      "text": "Jeremy"
+    },
+    {
+      "text": "¿¡PERO CÓMO!?"
+    },
+    {
+      "text": "¡SOLO ERES DE CLASE BAJA!"
+    }
+  ]
+}

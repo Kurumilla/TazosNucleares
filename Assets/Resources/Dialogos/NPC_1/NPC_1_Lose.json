@@ -1,0 +1,31 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 1,
+      "text": "Ryan"
+    },
+    {
+      "text": "PARECE QUE SOY SUPERIOR A TI"
+    },
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 0,
+      "text": "Ryan"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "¡TODAVÍA TENGO ENERGÍA!",
+          "answerText": "VAMOS A VER SI ES CIERTO"
+        },
+        {
+          "choiceText": "VOLVERÉ...",
+          "answerText": "ESPERO QUE SEAS MÁS FUERTE CUANDO VUELVAS"
+        }
+      ]
+    }
+  ]
+}

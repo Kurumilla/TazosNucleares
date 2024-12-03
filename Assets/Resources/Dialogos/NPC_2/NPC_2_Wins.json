@@ -1,0 +1,12 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 5,
+      "text": "Nadia"
+    },
+    {
+      "text": "¿¡PERO QUÉ PASÓ!?"
+    }
+  ]
+}

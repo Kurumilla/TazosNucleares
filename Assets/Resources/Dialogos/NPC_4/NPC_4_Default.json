@@ -1,0 +1,26 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 9,
+      "text": "Fiona"
+    },
+    {
+      "text": "A VER SI ME PUEDES IMPRESIONAR"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "TE DEMOSTRARÉ LO FUERTE QUE SOY",
+          "answerText": "PREPARATE"
+        },
+        {
+          "choiceText": "DAME TIEMPO PARA ESTAR LISTO",
+          "answerText": "ASÍ NO ME PODRÁS IMPRESIONAR"
+        }
+      ]
+    }
+  ]
+}

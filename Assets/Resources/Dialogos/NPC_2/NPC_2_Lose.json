@@ -1,0 +1,31 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 4,
+      "text": "Nadia"
+    },
+    {
+      "text": "¡WOOHOO, LO LOGRE!"
+    },
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 3,
+      "text": "Nadia"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "AÚN NO HE ACABADO",
+          "answerText": "TE VENCERÉ OTRA VEZ"
+        },
+        {
+          "choiceText": "AHORITA REGRESO PARA LA REVANCHA",
+          "answerText": "PARECE QUE NO PUEDES CONTRA MÍ"
+        }
+      ]
+    }
+  ]
+}

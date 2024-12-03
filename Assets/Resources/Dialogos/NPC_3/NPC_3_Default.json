@@ -1,0 +1,29 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 6,
+      "text": "Danny"
+    },
+    {
+      "text": "ESPERO QUE ESTÉS LISTO"
+    },
+    {
+      "text": "¡PORQUE VOY A GANAR!"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "NO ME SUBESTIMES",
+          "answerText": "CONFIADO YA TE VÍ, ¡PREPÁRATE!"
+        },
+        {
+          "choiceText": "TOMA TU TIEMPO PARA PREPARARTE",
+          "answerText": "VEO QUE TIENES MIEDO, PERO ESTÁ BIEN"
+        }
+      ]
+    }
+  ]
+}

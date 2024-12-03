@@ -81,8 +81,6 @@ MonoBehaviour:
   displayNameText: {fileID: 0}
   portraitAnimator: {fileID: 0}
   theStory: {fileID: 4900000, guid: c308c5481077133499431782243b948d, type: 3}
-  choices:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  choices: []
   choicesText: []
+  movimientoJugador: {fileID: 0}

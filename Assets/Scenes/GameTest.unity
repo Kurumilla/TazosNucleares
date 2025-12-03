@@ -2596,7 +2596,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 461634486469339804, guid: bd0bde21813205040bdcb594ea5fce59, type: 3}
       propertyPath: m_Name
-      value: CanvasKuru
+      value: UI_Tutorial
       objectReference: {fileID: 0}
     - target: {fileID: 461634486469339804, guid: bd0bde21813205040bdcb594ea5fce59, type: 3}
       propertyPath: m_IsActive

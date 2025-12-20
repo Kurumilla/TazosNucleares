@@ -1,0 +1,12 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 2,
+      "text": "Ryan"
+    },
+    {
+      "text": "SUPONGO QUE NO SOY MÁS FUERTE DE LO QUE CREÍ"
+    }
+  ]
+}

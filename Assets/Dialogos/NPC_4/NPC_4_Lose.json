@@ -1,0 +1,34 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 10,
+      "text": "Fiona"
+    },
+    {
+      "text": "¿EN SERIO?"
+    },
+    {
+      "text": "NI PARECE QUE LO INTENTASTE"
+    },
+    {
+      "isEvent": "Lucy",
+      "img": 9,
+      "text": "Fiona"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "OTRA VEZ, SI PUEDO GANAR",
+          "answerText": "ESO ESPERO"
+        },
+        {
+          "choiceText": "TODAVÍA NO PUEDO, PERO VOLVERÉ MÁS FUERTE",
+          "answerText": "LA VERDAD LO DUDO MUCHO"
+        }
+      ]
+    }
+  ]
+}

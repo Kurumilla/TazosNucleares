@@ -1,0 +1,26 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 12,
+      "text": "Jeremy"
+    },
+    {
+      "text": "LOS DE TU CLASE BAJA NO PUEDEN CONTRA MI"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "¿QUIERES APOSTAR?",
+          "answerText": "¿TE CREES BIEN LISTO VERDAD?"
+        },
+        {
+          "choiceText": "CUANDO ESTE LISTO TE DEMOSTRARE",
+          "answerText": "VES, NI NECESITO VENCERTE PARA DEMOSTRAR LO DÉBIL QUE ERES"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+﻿{
+  "Items": [
+    {
+      "isEvent": "CambiarPersonaje",
+      "img": 7,
+      "text": "Danny"
+    },
+    {
+      "text": "¿YA VISTE?"
+    },
+    {
+      "text": "SOY EL MÁS FUERTE"
+    },
+    {
+      "isEvent": "Lucy",
+      "img": 6,
+      "text": "Danny"
+    },
+    {
+      "isEvent": "MostrarOpciones",
+      "options": [
+        {
+          "isEffect": "Play",
+          "choiceText": "TE DEMOSTRARÉ QUE PUEDO GANARTE",
+          "answerText": "TE GANARÉ COMO SIEMPRE"
+        },
+        {
+          "choiceText": "DAME TIEMPO Y TE PODRÉ VENCER",
+          "answerText": "¿YA VES? NO PUEDES GANARME"
+        }
+      ]
+    }
+  ]
+}

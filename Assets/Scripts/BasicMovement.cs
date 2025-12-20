@@ -7,20 +7,24 @@ public class BasicMovement : MonoBehaviour
     public float moveSpeed = 5f; 
     public Animator animator; 
     public Transform modelTransform;
+    public EstadoDeJuego estadoDeJuego;
 
-    private Rigidbody rb; 
+    private Rigidbody rb;
+    private AudioSource audio;
     private bool isMoving = false;
 
     public bool activado = false;
 
     void Start()
     {
+        audio = GetComponent<AudioSource>();
+        estadoDeJuego = GameObject.Find("Estado de Juego").GetComponent<EstadoDeJuego>();
         rb = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
-        if (activado)
+        if (activado && !estadoDeJuego.movimientoBloqueado)
         {
             // Obtener las entradas de movimiento del eje horizontal y vertical
             float moveInputX = Input.GetAxisRaw("Horizontal");
@@ -29,16 +33,16 @@ public class BasicMovement : MonoBehaviour
             // Normalizar el vector de movimiento para evitar el movimiento en diagonal
             Vector3 movement = new Vector3(moveInputX, 0f, moveInputY).normalized;
 
-            // Verificar si el jugador se está moviendo
+            // Verificar si el jugador se estï¿½ moviendo
             if (movement != Vector3.zero)
             {
-                // Calcular la nueva posición del jugador
+                // Calcular la nueva posiciï¿½n del jugador
                 Vector3 newPosition = rb.position + transform.TransformDirection(movement) * moveSpeed * Time.deltaTime;
 
                 // Mover al jugador usando el Rigidbody
                 rb.MovePosition(newPosition);
 
-                // Girar el modelo del personaje hacia la dirección del movimiento
+                // Girar el modelo del personaje hacia la direcciï¿½n del movimiento
                 if (modelTransform != null)
                 {
                     modelTransform.LookAt(modelTransform.position + movement);
@@ -47,19 +51,23 @@ public class BasicMovement : MonoBehaviour
                 // Activar la variable bool en el Animator
                 if (!isMoving)
                 {
-                    animator.SetBool("movimiento", true);
+                    audio.Play();
+                    animator.SetBool("isWalking", true);
                     isMoving = true;
                 }
             }
-            else
+            else if (isMoving)
             {
-                // Desactivar la variable bool en el Animator
-                if (isMoving)
-                {
-                    animator.SetBool("movimiento", false);
-                    isMoving = false;
-                }
+                audio.Stop();
+                animator.SetBool("isWalking", false);
+                isMoving = false;
             }
+        }
+        else if (isMoving)
+        {
+            audio.Stop();
+            animator.SetBool("isWalking", false);
+            isMoving = false;
         }
     }
 }

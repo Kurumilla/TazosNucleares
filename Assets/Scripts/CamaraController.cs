@@ -5,21 +5,21 @@ using UnityEngine;
 public class CamaraController : MonoBehaviour
 {
     public Transform player; // Referencia al transform del jugador
-    public float distance = 5f; // Distancia entre la cámara y el jugador
-    public float height = 2f; // Altura de la cámara sobre el jugador
-    public Vector3 offset; // Offset adicional para ajustar la posición de la cámara
-    public float cameraAngle = 45f; // Ángulo de la cámara
+    public float distance = 5f; // Distancia entre la camara y el jugador
+    public float height = 2f; // Altura de la camara sobre el jugador
+    public Vector3 offset; // Offset adicional para ajustar la posicion de la camara
+    public float cameraAngle = 45f; // angulo de la camara
 
     private void FixedUpdate()
     {
-        // Convertir el ángulo de la cámara a dirección en el plano XY
+        // Convertir el angulo de la camara a direccion en el plano XY
         Vector3 direction = Quaternion.Euler(0f, cameraAngle, 0f) * Vector3.forward;
 
-        // Calcular la posición objetivo de la cámara
+        // Calcular la posicion objetivo de la camara
         Vector3 desiredPosition = player.position + offset - direction * distance + Vector3.up * height;
         transform.position = desiredPosition;
 
-        // Mantener la cámara mirando al jugador
+        // Mantener la camara mirando al jugador
         transform.LookAt(player.position + offset);
     }
 }

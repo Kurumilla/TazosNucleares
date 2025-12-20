@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Tazo
+  - Data
+  - Ignore
+  - Enemy
   layers:
   - Default
   - TransparentFX
